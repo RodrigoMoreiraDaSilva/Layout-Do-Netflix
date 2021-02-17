@@ -1,10 +1,10 @@
-<img src="img/Banner_README.png" align="center">
-
-<h1 align="center"> 📝 Descrição do projeto </h1>
+<img align="center" src="img/Banner_README.png">
+<h3 align="center"> 📝 Descrição do projeto </h3>
 <p align="center"> Nesse projeto, basicamente, fiz uma recriação básica do layout do Netflix. </p> 
 
-    [![GitHub issues](https://img.shields.io/github/issues/RodrigoMoreiraDaSilva/Layout-Do-Netflix?color=blueviolet&style=for-the-badge&labelColor=d3b1e2)](https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/issues)
-    ![Badge](https://img.shields.io/badge/NPM-v1.0.2-%237159c1?style=for-the-badge&logo=git&color=orange&logoColor=orange&labelColor=e5b89c)
+[![GitHub issues](https://img.shields.io/github/issues/RodrigoMoreiraDaSilva/Layout-Do-Netflix?color=blueviolet&style=for-the-badge&labelColor=d3b1e2)](https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/issues)
+![Badge](https://img.shields.io/badge/NPM-v1.0.5-%237159c1?style=for-the-badge&logo=git&color=orange&logoColor=orange&labelColor=e5b89c)
+
 ### 📋 ÍNDICE
 
    * [Sobre](#Sobre)
