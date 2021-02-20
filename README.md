@@ -9,7 +9,9 @@
   <img src="https://img.shields.io/github/issues/RodrigoMoreiraDaSilva/Layout-Do-Netflix?color=blueviolet&style=for-the-badge&labelColor=d3b1e2">
 </a>
 <img src="https://img.shields.io/badge/NPM-v0.0.7-%237159c1?style=for-the-badge&logo=git&color=orange&logoColor=orange&labelColor=e5b89c">
-<img src="https://img.shields.io/badge/LICENSE-MIT-%237159c1?style=for-the-badge&color=f70000&labelColor=ea6262">
+<a href="https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/blob/master/LICENSE">
+<img src="https://img.shields.io/github/license/RodrigoMoreiraDaSilva/Layout-Do-Netflix?style=for-the-badge&color=f70000&labelColor=ea6262">
+</a>
 <a href="https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/network">
   <img src="https://img.shields.io/github/forks/RodrigoMoreiraDaSilva/Layout-Do-Netflix?style=for-the-badge&labelColor=93deed">
 </a>
@@ -31,16 +33,18 @@
 
 <!--ts-->
    * [Sobre](#Sobre)
-        * [Descrição do Projeto](#Descrição_Do_Projeto)
-        * [Status do Projeto](#Status-do-projeto)
-   * [índice](#índice)
-   * [Recursos](#Recursos)
-   * [Demonstração](#Demonstração)
-   * [Pré-Requisitos](#Pré-requisitos)
-   * [Como visualizar](#Como-visualizar)
-   * [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
-   * [Autor](#Autor)
+        * [Descrição do Projeto](#--descrição-do-projeto-)
+        * [Status do Projeto](#--descrição-do-projeto-)
+   * [índice](#-índice)
+   * [Recursos](#%EF%B8%8F-recursos)
+   * [Demonstração](#-demonstração)
+   * [Pré-Requisitos](#-pré-requisitos)
+   * [Como visualizar](#-como-visualizar-)
+   * [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+   * [Autor](#-autor)
 <!--te-->
+
+****
 
 ### ⚙️ Recursos
 
@@ -49,15 +53,23 @@
 - [ ] Redirecionamento ao 'The Movie DB' do filme/série.
 - [x] Layout responsivo e semelhante ao original (em andamento).
 
+****
+
 ### 🎥 Demonstração
+
 - Essa é a aparência atual do projeto na resolução de 1000px.
+
 ![](img/Screenshots/Demonstração(1).png)
 
+
+****
 
 ### 💾 Pré-Requisitos: 
 
 - Para a execução desse projeto, não é necessário muita coisa, somente um conhecimento básico ou intermediário de html, css e javascript, além de ter baixado em sua máquina o framework Jquery [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/).
 - Não é necessário ter uma, mas é bem aconselhável, pois as IDES ajudam muito no desenvolvimento do projeto. Recomendo o uso do [Visual Studio Code](https://code.visualstudio.com/download).
+
+****
 
 ### 📲 Como visualizar <p id="#Como-visualizar"> 
 
@@ -70,8 +82,8 @@ $ git clone https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix.git
 $ cd Layout-Do-Netflix
 ```
 - Após clonar o repositório em sua máquina local, abra o diretório em seu editor de texto e confira se os diretórios estão sendo referenciados corretamente. Para visualizar a página, abra o arquivo `index.html` em seu navegador de preferência — particularmente, eu uso o [Opera](https://www.opera.com/pt-br/computer/opera) — e confira se tudo está sendo devidamente exibido. 
-### 
 
+****
 
 ### 🛠 Tecnologias Utilizadas
 
@@ -98,4 +110,4 @@ $ cd Layout-Do-Netflix
 <p align="center">
     <b> <i> Copyright (c) 2021 Rodrigo Moreira da Silva & Digital innovation One </i> </b>
 </p>
-  <p align="center"> <a href="http://escolhaumalicenca.com.br/licencas/mit/#"> <img src="https://img.shields.io/badge/LICENSE-MIT-%237159c1?style=for-the-badge&color=061430&labelColor=395ea8"> </a> </p>
+  <p align="center"> <a href="https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/blob/master/LICENSE"> <img src="https://img.shields.io/badge/LICENSE-MIT-%237159c1?style=for-the-badge&color=061430&labelColor=395ea8"> </a> </p>
