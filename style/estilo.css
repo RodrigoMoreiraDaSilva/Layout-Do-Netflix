@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
 :root {
     --vermelho: #E50914;
     --preto: #141414;
@@ -18,6 +20,7 @@ body {
 
 header {
     height: 45px;
+    background-color: #000000;
 }
 
 header img {
@@ -30,7 +33,10 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
 
+header .container img {
+    padding-left: 12px;
 }
 
 header nav a{
@@ -44,14 +50,21 @@ header nav a:hover {
     color: #f9f9f9;
 }
 
+.background {
+    padding-left: 50px;
+    margin-top: 10.3rem;
+    width: 100%;
+    padding-bottom: 4rem;
+}
 
 .filme-principal {
-    font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/The-Queens-Gambit-Poster.jpg');
+    background: linear-gradient(to right, #040404, #000000, hsla(0, 0%, 40%, 0)), url('../img/The-Queens-Gambit-Poster.jpg');
+    background-position: 0, 420px  0px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1020px 550px, 900px 550px;
 
-    height: 400px;
-    background-size: cover;
-
+    height: 550px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,23 +72,48 @@ header nav a:hover {
     padding-bottom: 10%;
 }
 
+.texto-titulo {
+    color: #FBFBFB;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
     width: 80%;
+    color: #FBFBFB;
 }
 
+.titulo-imagem {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    width: 75%;
+}
 
-.titulo {
-    margin-top: 15%;
-    width: 80%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.informacoes-basicas {
+    display: flex;
+}
+
+.texto-transparente {
+    font-size: 15px;
+    padding-top: 5px; 
+    color: #ECF0F1;
+    opacity: 0.6;
+    float: left;
+}
+
+.classificacao {
+    height: 26px;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 
 .botao {
-    background-color: rgba(0, 0, 0, .50);
+    background-color: #5f5c5c59;
     border: none;
+    border-radius: 3px;
     color: white;
 
     padding: 15px 30px;
@@ -84,6 +122,29 @@ header nav a:hover {
 
     cursor: pointer;
     transition: .5s;
+}
+
+.descricao {
+    font-family: 'Verdana';
+    text-align: justify;
+    line-height: 19px;
+    font-size: 15px;
+}
+
+.Estrelando {
+    font-family: 'Verdana';
+    text-align: justify;
+    line-height: 19px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+}
+
+.texto-atores {
+    padding-right: 5px;
+}
+
+#Atores {
+    padding-top: 5px;
 }
 
 .botao:hover {
@@ -95,13 +156,12 @@ header nav a:hover {
     margin-right: 10px;
 }
 
-
 .container {
-    margin-left: 20px;
+    margin-left: 28px;
 }
 
 .filme-principal .container{
-    width: 46% /* fazer por outras midias para 70% */
+    width: 60% /* fazer por outras midias para 70% */
 }
 
 .box-filme {
