@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style/estilo.css">
-        <link rel="shortcut icon" href="img/Netflix-icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./img/Elementos/Netflix-icon.png" type="image/x-icon">
 
         <!--Linkando o estilo de responsividade -->
         <link rel="stylesheet" href="style/responsive.css">
@@ -22,21 +22,41 @@
 
         <header>
             <div class="container">
-                <img src="img/Netflix-logo.png" class="logo" alt="logo do Netflix">
+                <section id="nav-secao">
+                    <img src="./img/Elementos/Netflix-logo.png" class="logo" alt="logo do Netflix">
+                
                 <nav>
                     <a href="#">Inicio</a>
                     <a href="#">Séries</a>
                     <a href="#">Filmes</a>
-                    <a href="#">Documentários</a>
+                    <a href="#">Mais recentes</a>
+                    <a href="#">Minha lista</a>
                 </nav>
+                </section>
+
+                <section class="usuario">
+                    <div id="caixa-de-pesquisa">
+                        <input type="text" id="texto-busca" placeholder="Buscar..."/>
+                        <img src="./img/Elementos/busca-branca.png" id="botão-de-Busca" alt="Buscar"onmouseover="lupaEmCima(this)" onmouseout="lupaFora(this)">
+                    </div>
+
+                    <p> INFANTIL </p>
+
+                    <img class="Elementos" src="./img/Elementos/presente-branco.png" alt="presente" onmouseover="presenteEmCima(this)" onmouseout="presenteFora(this)">
+
+                    <img class="Elementos" src="./img/Elementos/sininho-branco.png" alt="novidades do Netflix" onmouseover="sininhoMouseEmCima(this)" onmouseout="sininhoMouseFora(this)" id="sininho">
+                    
+                    <img class="Perfil" src="./img/Elementos/foto-de-perfil.jpg" alt="perfil do usuário">
+
+                    <img class="seta" src="./img/Elementos/seta-branco.png" alt="seta" onmouseover="setaMouseEmCima(this)" onmouseout="setaMouseFora(this)">
+                </section>
             </div>
         </header>
 
         <main>
             <div class="filme-principal">
                 <div class="container">
-                    <section class="background">
-                    <img class="titulo-imagem" src="img/O-Gambito-Da-Rainha-LOGO.png">
+                    <img class="titulo-imagem" src="./img/Elementos/O-Gambito-Da-Rainha-LOGO.png">
 
                     <p class="texto-titulo"> <b>O Gambito da Rainha</b> </p>
 
@@ -46,7 +66,7 @@
                         <p class="texto-transparente">│  1 Temporada  │  Séries drámaticas sobre questões sociais </p>
                     </section>
                         
-                    <p class="descricao">Durante a Guerra Fria, nos anos de 1950, em um orfanato do Kentucky, uma garota prodígio do xadrez luta contra o vício em uma jornada improvável para se tornar a número um do mundo.</p>
+                    <p class="descricao">Durante a Guerra Fria, nos anos de 1950, em um orfanato do Kentucky uma garota prodígio do xadrez luta contra o vício em uma jornada improvável para se tornar a número um do mundo.</p>
 
                     <section class="Estrelando">
                         <p class="texto-transparente texto-atores">
@@ -73,35 +93,52 @@
                             <i class="fas fa-info-circle"></i>
                             MAIS INFORMAÇÕES
                         </button>
-                        
-                        
                    
                     </div>
-                     </section>
                 </div>
             </div>
         </main>
 
+        <section class="nome-secao">
+            <h2 class="Titulo-secao">Suas séries preferidas</h2>
+        </section>
+
         <div class="carrossel-filmes">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="img/The-Queens-Gambit-Capa.jpg">
+                    <img class="box-filme" src="img/Capas/The-Queens-Gambit-Capa.jpg">
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Dark-capa.jpg">
+                    <img class="box-filme" src="img/Capas/Dark-capa.jpg">
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Stranger-Things-capa.jpg">
+                    <img class="box-filme" src="img/Capas/Stranger-Things-capa.jpg">
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Euphoria-capa.jpg">
+                    <img class="box-filme" src="img/Capas/Orphan-Black-capa.jpg">
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Pose-Capa.jpg">
+                    <img class="box-filme" src="img/Capas/Euphoria-capa.jpg">
+                </div>
+
+                <div class="item">
+                    <img class="box-filme" src="img/Capas/Pose-Capa.jpg">
+                </div>
+
+                <div class="item">
+                    <img class="box-filme" src="img/Capas/Elite-capa.jpg">
+                </div>
+
+                <div class="item">
+                    <img class="box-filme" src="img/Capas/Riverdale-Capa.jpg">
+                </div>
+
+                <div class="item">
+                    <img class="box-filme" src="img/Capas/Anne-With-An-E.jpg">
                 </div>
             </div>
         </div>
@@ -110,7 +147,7 @@
         <script src="js/owl/jquery.min.js"></script>
         <script src="js/owl/owl.carousel.min.js"></script>
         <script src="js/setup.js"></script>
-
+        <script src="js/procedimentos.js"></script>
     </body>
 
 </html>

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,100&display=swap');
 
 :root {
     --vermelho: #E50914;
     --preto: #141414;
+    --preto-escuro: #000000;
 }
 
 * {
@@ -26,6 +27,8 @@ header {
 header img {
     height: 39px;
     padding-top: 6px;
+    padding-right: 30px;
+    padding-left: 12px;
 }
 
 header .container {
@@ -35,33 +38,113 @@ header .container {
     justify-content: space-between;
 }
 
-header .container img {
-    padding-left: 12px;
-}
-
 header nav a{
     text-decoration: none;
-    color: #aaa;
-    margin-right: 10px;
+    color: rgb(207, 198, 198);
+    margin-right: 15px;
 }
-
 
 header nav a:hover {
-    color: #f9f9f9;
+    color: #FBFBFB;
+    font-weight: bold;
 }
 
-.background {
-    padding-left: 50px;
-    margin-top: 10.3rem;
-    width: 100%;
-    padding-bottom: 4rem;
+#nav-secao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+/* Seção Usuário */
+
+.usuario  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#caixa-de-pesquisa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--preto-escuro);
+    margin-right: 5px;
+    border-radius:15px;
+    width: 350px;
+    float: left;
+    border: 0;
+  }
+  
+  #texto-busca {
+    border-bottom: solid 0.1em #353232;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 15px;
+    width: 400px;
+    height: 30px;
+    border: none;
+  }
+
+  #caixa-de-pesquisa img {
+      border-left: solid 0.1em var(--vermelho);
+      padding-bottom: 2px;
+      font-style: italic;
+      height: 25px;
+  }
+
+  #caixa-de-pesquisa img:hover {
+      cursor: pointer;
+  }
+
+  .usuario .Elementos {
+    height: 30px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+
+  .Elementos:hover {
+      cursor: pointer;
+  }
+
+  .usuario p {
+      padding-right: 10px;
+  }
+
+  .usuario p:hover {
+    color: #F9F9F9;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+ .seta {
+    height: 20px;
+    padding-right: 2rem;
+  }
+
+  .seta:hover {
+      cursor: pointer;
+  }
+
+  .Perfil {
+      padding-right: 0px;
+      -webkit-filter: grayscale(0%);
+  }
+
+  .Perfil:hover {
+      -webkit-filter: grayscale(60%);
+      transition: 0.5s;
+      cursor: pointer;
+  }
+  
+/* ----------------------------------------------------------------------- */
 
 .filme-principal {
-    background: linear-gradient(to right, #040404, #000000, hsla(0, 0%, 40%, 0)), url('../img/The-Queens-Gambit-Poster.jpg');
-    background-position: 0, 420px  0px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1020px 550px, 900px 550px;
+    background: linear-gradient(to right, #040404, #000000, hsla(0, 0%, 40%, 0)), linear-gradient(to top, #040404, #000000, hsla(0, 0%, 40%, 0)), url('../img/The-Queens-Gambit-Poster.jpg');
+    background-position: 0, bottom, 460px  0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 1020px 550px, 1500px 35px,  900px 550px;
 
     height: 550px;
     
@@ -69,7 +152,10 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-bottom: 10%;
+    padding-left: 50px;
+    padding-top: 10.3rem;
+    width: 100%;
+    padding-bottom: 10.2rem;
 }
 
 .texto-titulo {
@@ -87,9 +173,8 @@ header nav a:hover {
 }
 
 .titulo-imagem {
-    margin-top: 40px;
     padding-bottom: 40px;
-    width: 75%;
+    width: 60%;
 }
 
 .informacoes-basicas {
@@ -164,12 +249,36 @@ header nav a:hover {
     width: 60% /* fazer por outras midias para 70% */
 }
 
+/* Título da seção do carrossel */
+
+.nome-secao {
+    background:  linear-gradient(to bottom, #040404, #000000, hsla(0, 0%, 40%, 0));
+    height: 40px;
+    padding-left: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* carrossel */
+
 .box-filme {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carrose-filmes {
+.carrossel-filmes {
     margin-top: 5px;
+}
+
+.item {
+    box-shadow: 5px 10px  #000000, 0 0 1em #000000;
+}
+
+/* geral */
+
+input:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    color: #F9F9F9;
+    font-style: normal;
+    outline: 0;
 }
