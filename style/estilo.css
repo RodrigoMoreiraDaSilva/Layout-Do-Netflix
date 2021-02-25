@@ -2,7 +2,7 @@
 
 :root {
     --vermelho: #E50914;
-    --preto: #141414;
+    --preto: #181818;
     --preto-escuro: #000000;
 }
 
@@ -18,6 +18,8 @@ body {
     font-family: 'Arial', Times, serif;
     color: white;
 }
+
+/* Cabeçalho e seção de navegação */
 
 header {
     height: 45px;
@@ -251,11 +253,14 @@ header nav a:hover {
 
 /* Título da seção do carrossel */
 
-.nome-secao {
+.secao-preferidas {
     background:  linear-gradient(to bottom, #040404, #000000, hsla(0, 0%, 40%, 0));
-    height: 40px;
-    padding-left: 80px;
+}
+
+.Titulo-secao {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 80px;
+    height: 40px;
 }
 
 /* carrossel */
@@ -266,18 +271,34 @@ header nav a:hover {
     display: block;
 }
 
+.item div {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
 .carrossel-filmes {
     margin-top: 5px;
 }
 
 .item {
-    box-shadow: 5px 10px  #000000, 0 0 1em #000000;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+.item button {
+    cursor: pointer;
+    border: none;
+    -webkit-box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.71);
+    box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.71);
 }
 
 /* geral */
 
 input:focus, button:focus {
-    box-shadow: 0 0 0 0;
     color: #F9F9F9;
     font-style: normal;
     outline: 0;
