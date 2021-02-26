@@ -92,16 +92,6 @@
 
 .fechar {
     position: absolute;
-    width: 30px;
-    right: -15px;
-    top: -20px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background: #ff4545;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #8d0000;
   }
 
 .modal-logo {
@@ -155,4 +145,49 @@ button .play {
 
 .sair {
     margin-right: 12px;
+}
+
+/* Parte do Tooltip (Dica de ferramenta) */
+.play {
+     position: relative;
+}
+
+.play::before,
+.play::after {
+    --scale: 0;
+    --tamanho-da-seta: 10px;
+    --vermelho-netflix: #EE0000;
+
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 50ms transform;
+    transform-origin: bottom center;
+}
+
+.play::before {
+    --translate-y: calc(-100% - var(--tamanho-da-seta));
+
+    content: attr(data-tooltip);
+    color: aliceblue;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    width: max-content;
+    background: var(--vermelho-netflix);
+}
+
+.play:hover::before,
+.play:hover::after {
+    --scale: 1;
+}
+
+.play::after {
+    --translate-y: calc(-1 * var(--tamanho-da-seta));
+
+    content: ' ';
+    border: var(--tamanho-da-seta) solid transparent;
+    border-top-color:var(--vermelho-netflix);
+    transform-origin: top center;
 }

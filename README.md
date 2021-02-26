@@ -1,5 +1,5 @@
 
-<p align="center"><img src="img/Banner_README.png"> </p>
+# Recriação do layout do Netflix
 <h3 align="center"> 📝 Descrição do projeto </h3>
 <p align="center"> Esse projeto foi desenvolvido como parte do processo de conclusão do <code>BOOTCAMP</code> de html web developer da Digital Innovation one. Nesse repositório, básicamente, fiz uma cópia do layout da página inicial da plataforma de catálogo de produções audio-visuais, o Netflix. </p> 
 
@@ -50,8 +50,8 @@
 
 - [x] Carrossel com o catálogo de filmes.
 - [x] Uso da biblioteca JQuery de carrossel.
-- [ ] Redirecionamento ao 'The Movie DB' do filme/série.
 - [x] Layout responsivo e semelhante ao original (em andamento).
+- [x] Modal dinâmico que exibe informações básicas do filme e/ou série.
 
 ****
 
