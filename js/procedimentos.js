@@ -32,40 +32,12 @@ function setaMouseFora(imagem) {
 
 // ---- Parte da lógica do Modal ---------- 
 
-var clique = false;
-
-function mudarCorBotão(imagem, estilo, condicao) {
-
-    if(clique == false) {
-        if(condicao == true) {
-            imagem.src = "./img/Elementos/play-preto.png";
-            document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
-        }
-        else {
-            imagem.src = "./img/Elementos/play-branco.png";
-            document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
-        } 
-    }
-   else {
-        if(condicao == true) {
-            imagem.src = "./img/Elementos/play-branco.png";
-            document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
-        }
-       else {
-            imagem.src = "./img/Elementos/play-preto.png";
-            document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
-       }
-   }
-}
-
-function clicou(imagem, estilo) {
-    if(clique == false){
-        clique = true;
+function mudarCorPlay(imagem, estilo, condicao) {
+    if(condicao == true) {
         imagem.src = "./img/Elementos/play-preto.png";
-        document.getElementById(estilo).style.backgroundColor = "#FFFFFF";;
+        document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
     }
-    else if(clique == true) {
-        clique = false;
+    else {
         imagem.src = "./img/Elementos/play-branco.png";
         document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
     }
@@ -73,10 +45,8 @@ function clicou(imagem, estilo) {
 
 // Assistir mais tarde 
 
-var cliqueMaisTarde = false;
-
-function mudarCorMaisTarde(imagem, estilo, condicao) {
-    if(cliqueMaisTarde == false) {
+function mudarCorMaisTarde(imagem, estilo, condicao, clique) {
+    if(clique == false) {
         if(condicao == true) {
             imagem.src = "./img/Elementos/relogio-preto.png";
             document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
@@ -98,14 +68,12 @@ function mudarCorMaisTarde(imagem, estilo, condicao) {
    }
 }
 
-function clicouMaisTarde(imagem, estilo) {
-    if(cliqueMaisTarde == false){
-        cliqueMaisTarde = true;
+function clicouMaisTarde(imagem, estilo, clique) {
+    if(clique == false){
         imagem.src = "./img/Elementos/relogio-preto.png";
         document.getElementById(estilo).style.backgroundColor = "#FFFFFF";;
     }
     else if(cliqueMaisTarde == true) {
-        cliqueMaisTarde = false;
         imagem.src = "./img/Elementos/relogio-branco.png";
         document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
     }
@@ -113,10 +81,8 @@ function clicouMaisTarde(imagem, estilo) {
 
 // Favoritos 
 
-var cliqueFavoritos = false;
-
-function mudarCorFavoritos(imagem, estilo, condicao) {
-    if(cliqueFavoritos == false) {
+function mudarCorFavoritos(imagem, estilo, condicao, clique) {
+    if(clique == false) {
         if(condicao == true) {
             imagem.src = "./img/Elementos/mais-preto.png";
             document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
@@ -138,14 +104,12 @@ function mudarCorFavoritos(imagem, estilo, condicao) {
    }
 }
 
-function clicouFavoritos(imagem, estilo) {
-    if(cliqueFavoritos == false){
-        cliqueFavoritos = true;
+function clicouFavoritos(imagem, estilo, clique) {
+    if(clique == false){
         imagem.src = "./img/Elementos/mais-preto.png";
         document.getElementById(estilo).style.backgroundColor = "#FFFFFF";;
     }
     else if(cliqueFavoritos== true) {
-        cliqueFavoritos = false;
         imagem.src = "./img/Elementos/mais-branco.png";
         document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
     }
@@ -153,10 +117,8 @@ function clicouFavoritos(imagem, estilo) {
 
 // like
 
-var cliqueLike = false;
-
-function mudarCorLike(imagem, estilo, condicao) {
-    if(cliqueLike == false) {
+function mudarCorLike(imagem, estilo, condicao, clique) {
+    if(clique == false) {
         if(condicao == true) {
             imagem.src = "./img/Elementos/like-preto.png";
             document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
@@ -178,14 +140,12 @@ function mudarCorLike(imagem, estilo, condicao) {
    }
 }
 
-function clicouLike(imagem, estilo) {
-    if(cliqueLike == false){
-        cliqueLike = true;
+function clicouLike(imagem, estilo, clique) {
+    if(clique == false){
         imagem.src = "./img/Elementos/like-preto.png";
         document.getElementById(estilo).style.backgroundColor = "#FFFFFF";;
     }
-    else if(cliqueLike== true) {
-        cliqueLike = false;
+    else if(clique == true) {
         imagem.src = "./img/Elementos/like-branco.png";
         document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
     }
@@ -193,10 +153,8 @@ function clicouLike(imagem, estilo) {
 
 // dislike 
 
-var cliqueDislike = false;
-
-function mudarCorDislike(imagem, estilo, condicao) {
-    if(cliqueDislike == false) {
+function mudarCorDislike(imagem, estilo, condicao, clique) {
+    if(clique == false) {
         if(condicao == true) {
             imagem.src = "./img/Elementos/dislike-preto.png";
             document.getElementById(estilo).style.backgroundColor = "#FFFFFF";
@@ -218,14 +176,12 @@ function mudarCorDislike(imagem, estilo, condicao) {
    }
 }
 
-function clicouDislike(imagem, estilo) {
-    if(cliqueDislike == false) {
-        cliqueDislike= true;
+function clicouDislike(imagem, estilo, clique) {
+    if(clique == false) {
         imagem.src = "./img/Elementos/dislike-preto.png";
         document.getElementById(estilo).style.backgroundColor = "#FFFFFF";;
     }
-    else if(cliqueDislike == true) {
-        cliqueDislike = false;
+    else if(clique == true) {
         imagem.src = "./img/Elementos/dislike-branco.png";
         document.getElementById(estilo).style.backgroundColor = "#3d3d3d";
     }

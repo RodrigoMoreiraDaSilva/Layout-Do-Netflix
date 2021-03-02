@@ -54,7 +54,7 @@
     pointer-events: auto;
 }
 
-.modal section img {
+.modal section .capa-modal {
     position: relative;
     padding: 0;
     width: 500px;
@@ -63,13 +63,7 @@
     border-top-right-radius: 3px;
 }
 
-.modal section div {
-    position: absolute;
-    top: 12px;
-    left: 8px;
-}
-
-.modal img {
+.modal .classificacao-idade {
     height: 25px;
     float: left;
     padding-top: 3px;
@@ -88,6 +82,7 @@
 .tema {
     padding-top: 0;
     padding-bottom: 0;
+    position: relative;
 }
 
 .fechar {
@@ -101,9 +96,22 @@
     height: 25px;
 }
 
+/* Logo da série */
+
+.logo-tema  img {
+    position: absolute;
+    height: 80px;
+}
+
+.logo-tema {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+
 /* SEÇÃO DO BOTÃO */
 
-.play img {
+.botao-modal img {
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
@@ -125,7 +133,7 @@
     transition: .5s;
 }
 
-button .play {
+button .botao-modal {
     height: 40px;
     width: 40px;
 }
@@ -148,12 +156,12 @@ button .play {
 }
 
 /* Parte do Tooltip (Dica de ferramenta) */
-.play {
-     position: relative;
+.botao-modal {
+    position: relative;
 }
 
-.play::before,
-.play::after {
+.botao-modal::before,
+.botao-modal::after {
     --scale: 0;
     --tamanho-da-seta: 10px;
     --vermelho-netflix: #EE0000;
@@ -166,7 +174,7 @@ button .play {
     transform-origin: bottom center;
 }
 
-.play::before {
+.botao-modal::before {
     --translate-y: calc(-100% - var(--tamanho-da-seta));
 
     content: attr(data-tooltip);
@@ -178,12 +186,12 @@ button .play {
     background: var(--vermelho-netflix);
 }
 
-.play:hover::before,
-.play:hover::after {
+.botao-modal:hover::before,
+.botao-modal:hover::after {
     --scale: 1;
 }
 
-.play::after {
+.botao-modal::after {
     --translate-y: calc(-1 * var(--tamanho-da-seta));
 
     content: ' ';

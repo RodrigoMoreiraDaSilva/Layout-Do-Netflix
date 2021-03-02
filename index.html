@@ -118,7 +118,10 @@
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Capas/Dark-capa.jpg">
+
+                    <button onclick="iniciaModal('AbrirOrphanBlack')">
+                        <img class="box-filme" src="img/Capas/Orphan-Black-capa.jpg" title="Orphan Black">
+                    </button>
 
                     <div>
                         <img src="./img/Elementos/netflix.png">
@@ -126,7 +129,10 @@
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Capas/Stranger-Things-capa.jpg">
+
+                    <button onclick="iniciaModal('AbrirEuphoria')">
+                        <img class="box-filme" src="img/Capas/Euphoria-capa.jpg">
+                    </button>
 
                     <div>
                         <img src="./img/Elementos/netflix.png">
@@ -134,7 +140,9 @@
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Capas/Orphan-Black-capa.jpg">
+                    <button onclick="iniciaModal('AbrirPose')">
+                        <img class="box-filme" src="img/Capas/Pose-Capa.jpg">
+                    </button>
 
                     <div id="#netflix-logo">
                         <img src="./img/Elementos/netflix.png">
@@ -142,7 +150,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Capas/Euphoria-capa.jpg">
+                    <img class="box-filme" src="img/Capas/Black-mirror.jpg">
 
                     <div>
                         <img src="./img/Elementos/netflix.png">
@@ -150,23 +158,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="box-filme" src="img/Capas/Pose-Capa.jpg">
-
-                    <div>
-                        <img src="./img/Elementos/netflix.png">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img class="box-filme" src="img/Capas/Elite-capa.jpg">
-
-                    <div>
-                        <img src="./img/Elementos/netflix.png">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img class="box-filme" src="img/Capas/Riverdale-Capa.jpg">
+                    <img class="box-filme" src="img/Capas/Cidade-invisivel.jpg">
 
                     <div>
                         <img src="./img/Elementos/netflix.png">
@@ -180,6 +172,22 @@
                         <img src="./img/Elementos/netflix.png">
                     </div>
                 </div>
+
+                <div class="item">
+                    <img class="box-filme" src="img/Capas/3-porcento.jpg">
+
+                    <div>
+                        <img src="./img/Elementos/netflix.png">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="box-filme" src="img/Capas/Stranger-Things-capa.jpg">
+
+                    <div>
+                        <img src="./img/Elementos/netflix.png">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -187,58 +195,234 @@
             <h2 class="Titulo-secao">Populares no Netflix</h2>
         </section>
         
+
+
+
+
+        <!-- PARTE COM OS MODAIS  -->
+
         <div class="background-modal" id="AbrirGambitoDaRainha">
 
             <div class="modal">
                 <!-- Usar fonte monoespaçada no fechar -->
                 <section class="tema">
-                    <img src="./img/Modal/O-Gambito-da-Rainha.jpg">
+                    <img class="capa-modal" src="./img/Modal/O-Gambito-da-Rainha.jpg">
+
+                    <div class="logo-tema ">
+                        <img src="./img/Elementos/O-Gambito-Da-Rainha-LOGO.png">
+                    </div>
                 </section>
              
                 <div class="interacoes">
                     <div class=botoes-especiais>
-                    <button class="play" type="button" data-tooltip="Assistir Agora">
-                        <img src="./img/Elementos/play-branco.png" id="botao-modal" onmouseover="mudarCorBotão(this, 'botao-modal', true)" onmouseout="mudarCorBotão(this, 'botao-modal', false)" onclick="clicou(this, 'botao-modal')">
-                    </button>
+                        <button class="botao-modal" type="button" data-tooltip="Assistir Agora">
+                            <img src="./img/Elementos/play-branco.png" id="Gambito-Play" onmouseover="GambitoDaRainha(this.id, false, this, true)" onmouseout="GambitoDaRainha(this.id, false, this, false)" onclick="GambitoDaRainha(this.id, true, this, false)">
+                        </button>
     
-                    <button class="play" data-tooltip="Assistir mais tarde">
-                        <img src="./img/Elementos/relogio-branco.png" id="assistirMaisTarde" onmouseover="mudarCorMaisTarde(this, 'assistirMaisTarde', true)" onmouseout="mudarCorMaisTarde(this, 'assistirMaisTarde', false)" onclick="clicouMaisTarde(this, 'assistirMaisTarde')">
-                    </button>
+                        <button class="botao-modal" data-tooltip="Assistir mais tarde">
+                            <img src="./img/Elementos/relogio-branco.png" id="Gambito-AssMais" onmouseover="GambitoDaRainha(this.id, false, this, true)" onmouseout="GambitoDaRainha(this.id, false, this, false)" onclick="GambitoDaRainha(this.id, true, this, false)">
+                        </button>
     
-                    <button class="play" data-tooltip="Adicionar aos favoritos">
-                        <img src="./img/Elementos/mais-branco.png" id="favoritar" onmouseover="mudarCorFavoritos(this, 'favoritar', true)" onmouseout="mudarCorFavoritos(this, 'favoritar', false)" onclick="clicouFavoritos(this, 'favoritar')">
-                    </button>
+                        <button class="botao-modal" data-tooltip="Adicionar aos favoritos">
+                            <img src="./img/Elementos/mais-branco.png" id="Gambito-favoritar" onmouseover="GambitoDaRainha(this.id, false, this, true)" onmouseout="GambitoDaRainha(this.id, false, this, false)" onclick="GambitoDaRainha(this.id, true, this, false)">
+                        </button>
                     
-                    <button class="play" data-tooltip="Marcar como “Gostei”">
-                        <img src="./img/Elementos/like-branco.png" id="likar" onmouseover="mudarCorLike(this, 'likar', true)" onmouseout="mudarCorLike(this, 'likar', false)" onclick="clicouLike(this, 'likar')">
-                    </button>
+                        <button class="botao-modal" data-tooltip="Marcar como “Gostei”">
+                            <img src="./img/Elementos/like-branco.png" id="Gambito-likar" onmouseover="
+                                GambitoDaRainha(this.id, false, this, true)" onmouseout="GambitoDaRainha(this.id, false, this, false)" onclick="GambitoDaRainha(this.id, true, this, false)">
+                        </button>
     
-                    <button class="play" data-tooltip="Marcar como “Não gostei”">
-                        <img src="./img/Elementos/dislike-branco.png" id="dislikar" onmouseover="mudarCorDislike(this, 'dislikar', true)" onmouseout="mudarCorDislike(this, 'dislikar', false)" onclick="clicouDislike(this, 'dislikar')">
-                    </button>
-                </div>
+                        <button class="botao-modal" data-tooltip="Marcar como “Não gostei”">
+                            <img src="./img/Elementos/dislike-branco.png" id="Gambito-dislikar" onmouseover="GambitoDaRainha(this.id, false, this, true)" onmouseout="GambitoDaRainha(this.id, false, this, false)" onclick="GambitoDaRainha(this.id, true, this, false)">
+                        </button>
+                    </div>
     
                     <div>
-                        <button class="play sair" data-tooltip="Fechar janela">
-                            <img src="./img/Elementos/sair-branco.png" id="sair"onmouseout="sobreOSair(this, 'sair', true)" onmouseover="sobreOSair(this, 'sair', false)" class="sair">
+                        <button class="botao-modal sair" data-tooltip="Fechar janela">
+                            <img src="./img/Elementos/sair-branco.png" id="sair-Gambito"onmouseout="sobreOSair(this, this.id, true)" onmouseover="sobreOSair(this, this.id, false)" class="sair">
                         </button>
                     </div>
                 </div>
     
                 <div id="informacoes-basicas-modal">
                     <p class="texto-modal"> 1 Temporada </p> 
-                    <img src="./img/Elementos/classificacao-16-anos.png">
+                        <img class="classificacao-idade" src="./img/Elementos/classificacao-16-anos.png">
                     <p> 2020 </p>
                 </div>
                 
                 <p> Drama • Obra de Época • Complexo</p>
             </div>
-            </div>    
+        </div>  
+        
+        <!-- Orphan Black  -->
+
+        <div class="background-modal" id="AbrirOrphanBlack">
+
+            <div class="modal">
+                <!-- Usar fonte monoespaçada no fechar -->
+                <section class="tema">
+                    <img class="capa-modal" src="./img/Modal/Orphan-Black.jpg">
+
+                    <div class="logo-tema ">
+                        <img src="./img/Elementos/Orphan-Black_logo.png">
+                    </div>
+                </section>
+             
+                <div class="interacoes">
+                    <div class=botoes-especiais>
+                        <button class="botao-modal" type="button" data-tooltip="Assistir Agora">
+                            <img src="./img/Elementos/play-branco.png" id="OrpBlack-Play" onmouseover="OrphanBlack(this.id, false, this, true)" onmouseout="OrphanBlack(this.id, false, this, false)" onclick="OrphanBlack(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Assistir mais tarde">
+                            <img src="./img/Elementos/relogio-branco.png" id="OrpBlack-AssMais" onmouseover="OrphanBlack(this.id, false, this, true)" onmouseout="OrphanBlack(this.id, false, this, false)" onclick="OrphanBlack(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Adicionar aos favoritos">
+                            <img src="./img/Elementos/mais-branco.png" id="OrpBlack-Favoritar" onmouseover="OrphanBlack(this.id, false, this, true)" onmouseout="OrphanBlack(this.id, false, this, false)" onclick="OrphanBlack(this.id, true, this, false)">
+                        </button>
+                    
+                        <button class="botao-modal" data-tooltip="Marcar como “Gostei”">
+                            <img src="./img/Elementos/like-branco.png" id="likar-OrpBlack" onmouseover="
+                                OrphanBlack(this.id, false, this, true)" onmouseout="OrphanBlack(this.id, false, this, false)" onclick="OrphanBlack(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Marcar como “Não gostei”">
+                            <img src="./img/Elementos/dislike-branco.png" id="dislikar-OrpBlack" onmouseover="OrphanBlack(this.id, false, this, true)" onmouseout="OrphanBlack(this.id, false, this, false)" onclick="OrphanBlack(this.id, true, this, false)">
+                        </button>
+                    </div>
+    
+                    <div>
+                        <button class="botao-modal sair" data-tooltip="Fechar janela">
+                            <img src="./img/Elementos/sair-branco.png" id="sair-OrphanBlack"onmouseout="sobreOSair(this, this.id, true)" onmouseover="sobreOSair(this, this.id, false)" class="sair">
+                        </button>
+                    </div>
+                </div>
+    
+                <div id="informacoes-basicas-modal">
+                    <p class="texto-modal"> 5 Temporadas </p> 
+                        <img class="classificacao-idade" src="./img/Elementos/classificacao-16-anos.png">
+                    <p> 2013 </p>
+                </div>
+                
+                <p> Suspense • Ficção Cientifica • Drama</p>
+            </div>
+        </div>  
+
+        <!-- Euphoria -->
+
+        <div class="background-modal" id="AbrirEuphoria">
+
+            <div class="modal">
+                <!-- Usar fonte monoespaçada no fechar -->
+                <section class="tema">
+                    <img class="capa-modal" src="./img/Modal/Euphoria.jpg">
+
+                    <div class="logo-tema ">
+                        <img src="./img/Elementos/Euphoria-logo.png">
+                    </div>
+                </section>
+             
+                <div class="interacoes">
+                    <div class=botoes-especiais>
+                        <button class="botao-modal" type="button" data-tooltip="Assistir Agora">
+                            <img src="./img/Elementos/play-branco.png" id="Euphoria-AssAgr" onmouseover="Euphoria(this.id, false, this,  true)" onmouseout="Euphoria(this.id, false, this, false)" onclick="Euphoria('Euphoria-AssAgr', true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Assistir mais tarde">
+                            <img src="./img/Elementos/relogio-branco.png" id="Euphoria-AssMais" onmouseover="Euphoria(this.id, false, this, true)" onmouseout="Euphoria(this.id, false, this, false)" onclick="Euphoria(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Adicionar aos favoritos">
+                            <img src="./img/Elementos/mais-branco.png" id="Euphoria-Favoritar" onmouseover="Euphoria(this.id, false, this, true)" onmouseout="Euphoria(this.id, false, this, false)" onclick="Euphoria(this.id, true, this, false)">
+                        </button>
+                    
+                        <button class="botao-modal" data-tooltip="Marcar como “Gostei”">
+                            <img src="./img/Elementos/like-branco.png" id="likar-Euphoria" onmouseover="Euphoria(this.id, false, this, true)" onmouseout="Euphoria(this.id, false, this, false)" onclick="Euphoria(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Marcar como “Não gostei”">
+                            <img src="./img/Elementos/dislike-branco.png" id="dislikar-Euphoria" onmouseover="Euphoria(this.id, false, this, true)" onmouseout="Euphoria(this.id, false, this, false)" onclick="Euphoria(this.id, true, this, false)">
+                        </button>
+                    </div>
+    
+                    <div>
+                        <button class="botao-modal sair" data-tooltip="Fechar janela">
+                            <img src="./img/Elementos/sair-branco.png" id="sair-Euphoria"onmouseout="sobreOSair(this, this.id, true)" onmouseover="sobreOSair(this, this.id, false)" class="sair">
+                        </button>
+                    </div>
+                </div>
+    
+                <div id="informacoes-basicas-modal">
+                    <p class="texto-modal"> 1 Temporada </p> 
+                        <img class="classificacao-idade" src="./img/Elementos/classificacao-18-anos.png">
+                    <p> 2019 </p>
+                </div>
+                
+                <p> Drama • Série de adolescentes • Minisséries</p>
+            </div>
+        </div>    
+
+        <!-- POSE  -->
+
+        <div class="background-modal" id="AbrirPose">
+
+            <div class="modal">
+                <!-- Usar fonte monoespaçada no fechar -->
+                <section class="tema">
+                    <img class="capa-modal" src="./img/Modal/Pose.jpg">
+
+                    <div class="logo-tema ">
+                        <img src="./img/Elementos/Pose-logo.png">
+                    </div>
+                </section>
+             
+                <div class="interacoes">
+                    <div class=botoes-especiais>
+                        <button class="botao-modal" type="button" data-tooltip="Assistir Agora">
+                            <img src="./img/Elementos/play-branco.png" id="Pose-Play" onmouseover="Pose(this.id, false, this, true)" onmouseout="Pose(this.id, false, this, false)" onclick="Pose(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Assistir mais tarde">
+                            <img src="./img/Elementos/relogio-branco.png" id="Pose-AssMais" onmouseover="Pose(this.id, false, this, true)" onmouseout="Pose(this.id, false, this, false)" onclick="Pose(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Adicionar aos favoritos">
+                            <img src="./img/Elementos/mais-branco.png" id="Pose-Favoritar" onmouseover="Pose(this.id, false, this, true)" onmouseout="Pose(this.id, false, this, false)" onclick="Pose(this.id, true, this, false)">
+                        </button>
+                    
+                        <button class="botao-modal" data-tooltip="Marcar como “Gostei”">
+                            <img src="./img/Elementos/like-branco.png" id="likar-Pose" onmouseover="
+                                Pose(this.id, false, this, true)" onmouseout="Pose(this.id, false, this, false)" onclick="Pose(this.id, true, this, false)">
+                        </button>
+    
+                        <button class="botao-modal" data-tooltip="Marcar como “Não gostei”">
+                            <img src="./img/Elementos/dislike-branco.png" id="dislikar-Pose" onmouseover="Pose(this.id, false, this, true)" onmouseout="Pose(this.id, false, this, false)" onclick="Pose(this.id, true, this, false)">
+                        </button>
+                    </div>
+    
+                    <div>
+                        <button class="botao-modal sair" data-tooltip="Fechar janela">
+                            <img src="./img/Elementos/sair-branco.png" id="sair-Pose"onmouseout="sobreOSair(this, this.id, true)" onmouseover="sobreOSair(this, this.id, false)" class="sair">
+                        </button>
+                    </div>
+                </div>
+    
+                <div id="informacoes-basicas-modal">
+                    <p class="texto-modal"> 2 Temporadas </p> 
+                        <img class="classificacao-idade" src="./img/Elementos/classificacao-16-anos.png">
+                    <p> 2018 </p>
+                </div>
+                
+                <p> Drama • Musical • Séries sobre questões sociais</p>
+            </div>
+        </div>  
 
         <script src="https://kit.fontawesome.com/0e06257c75.js"></script>
         <script src="js/owl/jquery.min.js"></script>
         <script src="js/owl/owl.carousel.min.js"></script>
         <script src="js/setup.js"></script>
+        <script src="./js/modal_procedimentos.js"></script>
         <script src="js/procedimentos.js"></script>
     </body>
 
