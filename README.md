@@ -1,14 +1,14 @@
 
-# Recriação do layout do Netflix
+<h1 align="center"> Recriação do layout do Netflix </h1>
 <h3 align="center"> 📝 Descrição do projeto </h3>
 <p align="center"> Esse projeto foi desenvolvido como parte do processo de conclusão do <code>BOOTCAMP</code> de html web developer da Digital Innovation one. Nesse repositório, básicamente, fiz uma cópia do layout da página inicial da plataforma de catálogo de produções audio-visuais, o Netflix. </p> 
 
 <p align="center">
-<img src="https://img.shields.io/static/v1?label=Progresso&message=80%&color=5d4f5e&style=for-the-badge&labelColor=9f8da0">
+<img src="https://img.shields.io/static/v1?label=Progresso&message=57%&color=5d4f5e&style=for-the-badge&labelColor=9f8da0">
 <a href="https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/issues">
   <img src="https://img.shields.io/github/issues/RodrigoMoreiraDaSilva/Layout-Do-Netflix?color=blueviolet&style=for-the-badge&labelColor=d3b1e2">
 </a>
-<img src="https://img.shields.io/badge/NPM-v0.0.7-%237159c1?style=for-the-badge&logo=git&color=orange&logoColor=orange&labelColor=e5b89c">
+<img src="https://img.shields.io/badge/NPM-v1.0.0-%237159c1?style=for-the-badge&logo=git&color=orange&logoColor=orange&labelColor=e5b89c">
 <a href="https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/RodrigoMoreiraDaSilva/Layout-Do-Netflix?style=for-the-badge&color=f70000&labelColor=ea6262">
 </a>
@@ -23,7 +23,7 @@
 ****
 <p align="center">
    <b> 📈 Status do projeto: 📉 </b> <br>
-   <i>refatorando...</i> <br>
+   <i>codificando...</i> <br>
    ◼️◼️◼️◼️◼️◼️◼️◼️◻️◻️◻️◻️
 </p>
 
@@ -48,18 +48,35 @@
 
 ### ⚙️ Recursos
 
-- [x] Carrossel com o catálogo de filmes.
 - [x] Uso da biblioteca JQuery de carrossel.
-- [x] Layout responsivo e semelhante ao original (em andamento).
+- [x] Layout dinâmico e semelhante ao original.
+- [x] Cabeçalho/Barra de navegação com barra de pesquisa.
+- [x] Carrossel com o catálogo de filmes e séries disponíveis.
+- [ ] Sistema de sugestão de preenchimento na borda de pesquisa.
 - [x] Modal dinâmico que exibe informações básicas do filme e/ou série.
+- [ ] Sistema de busca simples que redireciona a tela ao elemento solicitado na busca.
+- [ ] Menu drop-down (Menu suspenso) na barra de navegação que exibe as opções de cada seção do menu.
+- [x] Botões funcionais que exercem funções no sistema do site (redirecionar para outras páginas e etc).
+- [x] Uso de tooltips (Dicas de contexto) em determinadas partes do layout que explicam o que cada um dos botões fazem.
+- [ ] Cabeçalho fixo e dinâmico que acompanha o scroll e altera seus atributos de acordo com o ponto em que a página se encontra.
+- [ ] Responsividade: Interface multiplataforma que é projetada para ser eficiente e dinâmica em diversos tipos de resoluções (do mobile ao desktop).
+- [x] Modal dinâmico: Uma pequena interface "pop up" animada que é exibida após clicar no filme, exibindo as principais opções e características do filme/série para o usuário.
 
 ****
 
 ### 🎥 Demonstração
 
-- Essa é a aparência atual do projeto na resolução de 1000px.
+<p align="center"><code> 🕗 VERSÃO 0.0.1 🕗 </code> </p>
 
-![](img/Screenshots/Demonstração(1).png)
+> Na resolução de 1000px *(versão final do curso)*.
+
+![](img/Screenshots/0.0.1.png)
+
+<p align="center"><code> 🕗 VERSÃO 1.0.0 🕗 </code> </p>
+
+> Demonstração das funcionalidades dessa versão na resolução de 1000px `(responsividade ainda não configurada)`.
+
+![](./img/Screenshots/1.0.0.gif)
 
 
 ****
@@ -67,7 +84,10 @@
 ### 💾 Pré-Requisitos: 
 
 - Para a execução desse projeto, não é necessário muita coisa, somente um conhecimento básico ou intermediário de html, css e javascript, além de ter baixado em sua máquina o framework Jquery [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/).
-- Não é necessário ter uma, mas é bem aconselhável, pois as IDES ajudam muito no desenvolvimento do projeto. Recomendo o uso do [Visual Studio Code](https://code.visualstudio.com/download).
+
+> ☛ O framework já está incluido no repositorio, sendo assim, ao copiar o repositorio, tudo o que for necessário já estará incluso.
+
+- Uma IDE é essencial, mesmo não sendo obrigatório, é bem aconselhável, pois as IDES ajudam muito no desenvolvimento do projeto. Recomendo o uso do [Visual Studio Code](https://code.visualstudio.com/download).
 
 ****
 
