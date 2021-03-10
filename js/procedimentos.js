@@ -1,33 +1,45 @@
-function sininhoMouseEmCima(imagem) {
-    imagem.src = "./img/Elementos/sininho-cinza.png";
+// O botão de cancelar aparecer somente com o foco no input
+
+const cancelarBotão = document.querySelector('.cancelar-texto');
+
+function exibirBotãoCancelar() {
+    cancelarBotão.classList.add("mostrar-cancelar");
+    cancelarBotão.classList.remove("não-mostrar-cancelar");
 }
 
-function sininhoMouseFora(imagem) {
-    imagem.src = "./img/Elementos/sininho-branco.png";
+/* Animação da barra de pesquisa */
+
+const searchBtn = document.querySelector('.botao-pesquisar');
+const searchBox = document.querySelector('.pesquisa-caixa');
+let pesquisarBotão = false;
+
+searchBtn.onclick = () => {
+    if(pesquisarBotão ==  false) {
+        searchBox.classList.add("active");
+
+        pesquisarBotão = true;
+    }
+    else {
+        searchBox.classList.remove("active");
+
+        pesquisarBotão = false;
+    }
+    
 }
 
-function lupaEmCima(imagem) {
-    imagem.src = "./img/Elementos/busca-cinza.png";
+// Animação da seta do usuário
+
+document.querySelector('.usuario-conta').onmouseover = function() { SobrePerfil() };
+document.querySelector('.usuario-conta').onmouseout = function() { ForaPerfil() };
+
+const seta = document.querySelector('.seta');
+
+function SobrePerfil() {
+    seta.classList.add("girar");
 }
 
-function lupaFora(imagem) {
-    imagem.src = "./img/Elementos/busca-branca.png";
-}
-
-function presenteEmCima(imagem){
-    imagem.src = "./img/Elementos/presente-cinza.png";
-}
-
-function presenteFora(imagem) {
-    imagem.src = "./img/Elementos/presente-branco.png";
-}
-
-function setaMouseEmCima(imagem) {
-    imagem.src = "./img/Elementos/seta-cinza.png"
-}
-
-function setaMouseFora(imagem) {
-    imagem.src = "./img/Elementos/seta-branco.png"
+function ForaPerfil() {
+    seta.classList.remove("girar");
 }
 
 // ---- Parte da lógica do Modal ---------- 

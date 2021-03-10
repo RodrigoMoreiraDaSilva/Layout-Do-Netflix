@@ -1,0 +1,46 @@
+<div class="container">
+
+    <div class="barra">
+        <span class="fas fa-bars"></span>
+        <!-- <img src="./img/Elementos/x-branco.png"> -->
+    </div>
+
+    <section id="nav-secao">
+        <img src="./img/Elementos/Netflix-logo.png" class="logo" alt="logo do Netflix">
+    
+        <nav>
+            <li href="#">Inicio</li>
+            <li href="#">Séries</li>
+            <li href="#">Filmes</li>
+            <li href="#">Mais recentes</li>
+            <li href="#">Minha lista</li>
+        </nav>
+    </section>
+
+    <!-- ícone de pesquisa e cancelamento para a responsividade -->
+    <div class="search-icon">
+        <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+    </div>
+
+    <!-- Barra de pesquisa  -->
+    <section class="usuario">
+        <div id="caixa-de-pesquisa" class="pesquisa-caixa">
+            <input type="search" id="texto-busca" placeholder="Buscar..." autocomplete="off"/>
+            <button type="submit"class="botao-pesquisar" title="Pesquisar" onmouseover="lupaEmCima('botão-de-Busca')" onmouseout="lupaFora('botão-de-Busca')" onclick="lupaClique('botão-de-Busca')">
+                <img src="./img/Elementos/busca-branca.png" id="botão-de-Busca" alt="Buscar">
+            </button>
+        </div>
+
+        <img class="Elementos" src="./img/Elementos/presente-branco.png" title="presente"  alt="presente" onmouseover="presenteEmCima(this)" onmouseout="presenteFora(this)">
+
+        <img class="Elementos" src="./img/Elementos/sininho-branco.png" title="Notificações" alt="novidades do Netflix" onmouseover="sininhoMouseEmCima(this)" onmouseout="sininhoMouseFora(this)" id="sininho">
+        
+        <img class="Perfil"src="./img/Elementos/foto-de-perfil.jpg" title="Foto de perfil do usuário" alt="perfil do usuário">
+
+        <img class="seta" src="./img/Elementos/seta-branco.png" title="Alternar usuário" alt="seta" onmouseover="setaMouseEmCima(this)" onmouseout="setaMouseFora(this)">
+        
+    </section>
+</div>

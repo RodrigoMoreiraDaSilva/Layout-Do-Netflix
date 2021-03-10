@@ -450,3 +450,116 @@ function Pose(qualbotao, foiclicado, imagem, emcimadobotao) {
     break;
     }
 }
+
+/* --------------------------  Black Mirror ------------------------ */
+
+var assistirMaisTardeBlackMirror = false;
+var favoritarBlackMirror = false;
+var dislikarBlackMirror = false;
+var likarBlackMirror = false;
+
+var likarLocalBlackMirror;
+var dislikarLocalBlackMirror;
+
+function BlackMirror(qualbotao, foiclicado, imagem, emcimadobotao) {
+    switch (qualbotao) {
+        case 'BlackMirror-Play':
+            if(foiclicado == false) {
+                mudarCorPlay(imagem, qualbotao, emcimadobotao);
+            }
+            else {
+                window.location.href = "https://youtu.be/jROLrhQkK78";
+            }
+        break;
+
+        case 'BlackMirror-AssMais': 
+            if(foiclicado == false) {
+                mudarCorMaisTarde(imagem, qualbotao, emcimadobotao, assistirMaisTardeBlackMirror);
+            }
+            else {
+                if(assistirMaisTardeBlackMirror == false) {
+                    assistirMaisTardeBlackMirror = true;
+
+                    clicouMaisTarde(imagem, qualbotao, assistirMaisTardeBlackMirror);
+                }
+                else {
+                    assistirMaisTardeBlackMirror = false;
+
+                    clicouMaisTarde(imagem, qualbotao, assistirMaisTardeBlackMirror);
+                }
+            }
+        break;
+
+        case 'BlackMirror-Favoritar': 
+            if(foiclicado == false) {
+                mudarCorFavoritos(imagem, qualbotao, emcimadobotao, favoritarBlackMirror);
+            }
+            else {
+                if(favoritarBlackMirror == false) {
+                    favoritarBlackMirror = true;
+
+                    clicouMaisTarde(imagem, qualbotao, favoritarBlackMirror);
+                }
+                else {
+                    favoritarBlackMirror = false;
+
+                    clicouFavoritos(imagem, qualbotao, favoritarBlackMirror);
+                }
+            }
+        break;
+
+        case 'likar-BlackMirror': 
+        likarLocalBlackMirror = imagem;
+
+        if(foiclicado == false) {
+            mudarCorLike(imagem, qualbotao, emcimadobotao, likarBlackMirror);
+        }
+        else {
+            if(likarBlackMirror == false) {
+                likarBlackMirror = true;
+
+                clicouLike(imagem, qualbotao, likarBlackMirror);
+
+                if(dislikarBlackMirror == true) {
+                    dislikarBlackMirror = false;
+
+                    dislikarLocalBlackMirror.src = "./img/Elementos/dislike-branco.png";
+                    document.getElementById('dislikar-BlackMirror').style.backgroundColor = "#3d3d3d";
+                }
+            }
+            else {
+                likarBlackMirror = false;
+
+                clicouLike(imagem, qualbotao, likarBlackMirror);
+            }
+        }
+    break;
+
+    case 'dislikar-BlackMirror':
+        dislikarLocalBlackMirror = imagem;
+
+        if(foiclicado == false) {
+            mudarCorDislike(imagem, qualbotao, emcimadobotao, dislikarBlackMirror);
+        }
+        else {
+            if(dislikarBlackMirror == false) {
+                dislikarBlackMirror = true;
+
+                clicouDislike(imagem, qualbotao, dislikarBlackMirror);
+                
+                if(likarBlackMirror == true) {
+                    likarBlackMirror = false;
+
+                    likarLocalBlackMirror.src = "./img/Elementos/like-branco.png";
+                    document.getElementById('likar-BlackMirror').style.backgroundColor = "#3d3d3d";
+                }
+            }
+            else {
+                dislikarLocalBlackMirror = false;
+
+                clicouDislike(imagem, qualbotao, dislikarBlackMirror)
+            }
+        }
+    break;
+    }
+}
