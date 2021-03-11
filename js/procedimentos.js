@@ -69,15 +69,11 @@ function mudarValorNavegacaoFalse() {
     navegar = false;
 
     if(menu == false) {
-        setTimeout(() => {
-            setTimeout(() => {
-                navegacao.classList.add('mostrar');
-    
-                document.querySelector('.menu-opcoes').onmouseover = function() { mudarValorMenuTrue() };
-            }, 0);
-            
+        navegacao.classList.add('mostrar');
+
+        if(menu == false) {
             navegacao.classList.remove('mostrar');
-        }, 200);
+        }
     }
 
     verificarSeSaiu();

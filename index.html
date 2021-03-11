@@ -35,6 +35,7 @@
                     <!-- Estrutura do cabeçalho responsivo  -->
                     <div class="cabecalho-responsivo">
                         <div class="barra"> <span class="fas fa-bars"> </span> </div>
+                        <div class="cancelar"> <span class="fas fa-times"> </span></div>
 
                         <button class="netflix-logo" title="Logo do Netflix"> <img src="./img/Elementos/Netflix-logo.png" class="logo"alt="logo do Netflix" > </button>
                         
@@ -48,8 +49,22 @@
                     </section>
 
                     <nav class="menu-opcoes">
+                        <section class="usuario-conta">
+                            <img src="./img/Elementos/foto-de-perfil.jpg" alt="Foto de perfil do usuário" class="perfil_responsivo">
+                            <table>
+                                <p class="Nome-do-usuario">Usuario 1<br>
+                                <a class="trocar-usuario">Trocar de perfil <a></p>
+                            </table>
+                        </section>
+                        
+                        <li class="responsividade">Conta</li>
+                        <li class="responsividade">Centro de Ajuda</li>
+                        <li class="responsividade">Sair da Netflix</li>
+
+                        <hr/>
+
                         <i class="fas fa-caret-up"></i>
-                        <li>Início</li>
+                        <li class="inicio">Início</li>
                         <li>Séries</li>
                         <li>Filmes</li>
                         <li>Mais recentes</li>
@@ -68,11 +83,11 @@
                         <img src="./img/Elementos/excluir-texto.svg" alt="ícone de apagar texto" class="cancelar-texto não-mostrar-cancelar" onclick="document.getElementById('texto-busca').value = ''">
                     </div>
 
-                    <table class="Elementos-interativos">
+                    <div class="Elementos-interativos">
                         <img src="./img/Elementos/gift.svg" class="Elementos">
 
                         <img src="./img/Elementos/bell.svg" class="Elementos">
-                    </table>
+                    </div>
 
                     <section class="usuario-conta">
                         <img src="./img/Elementos/foto-de-perfil.jpg" onmouseover="girar()" alt="perfil do usuário" class="perfil">
