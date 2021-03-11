@@ -45,6 +45,65 @@ function ForaPerfil() {
     seta.classList.remove("girar");
 }
 
+// Mostrar navegação (Responsividade de 1145px)
+var navegar = false;
+var menu = false;
+
+document.querySelector('.navegar-menu').onmouseout = function() { mudarValorNavegacaoFalse(); };
+document.querySelector('.navegar-menu').onmouseover = function() { mudarValorNavegacaoTrue(); };
+document.querySelector('.menu-opcoes').onmouseover = function() { mudarValorMenuTrue() };
+document.querySelector('.menu-opcoes').onmouseout = function() { mudarValorMenuFalse() }
+
+const navegacao = document.querySelector('.menu-opcoes');
+
+function verificarSeSaiu() {
+    if(navegar == false && menu == false) {
+       navegacao.classList.remove('mostrar');
+    }
+    else {
+        navegacao.classList.add('mostrar');
+    }
+}
+
+function mudarValorNavegacaoFalse() {
+    navegar = false;
+
+    if(menu == false) {
+        setTimeout(() => {
+            setTimeout(() => {
+                navegacao.classList.add('mostrar');
+    
+                document.querySelector('.menu-opcoes').onmouseover = function() { mudarValorMenuTrue() };
+            }, 0);
+            
+            navegacao.classList.remove('mostrar');
+        }, 200);
+    }
+
+    verificarSeSaiu();
+}
+
+function mudarValorNavegacaoTrue() {
+    navegar = true;
+
+    navegacao.classList.add('mostrar');
+    verificarSeSaiu();
+}
+
+function mudarValorMenuTrue() {
+    menu = true;
+
+    navegacao.classList.add('mostrar');
+    verificarSeSaiu();
+}
+
+function mudarValorMenuFalse() {
+    menu = false;
+
+    verificarSeSaiu();
+}
+
+
 // ---- Parte da lógica do Modal ---------- 
 
 function mudarCorPlay(imagem, estilo, condicao) {

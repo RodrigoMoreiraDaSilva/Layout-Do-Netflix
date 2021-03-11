@@ -64,6 +64,10 @@ header nav {
     margin-left: 35px;
 }
 
+header nav .fa-caret-up {
+    display: none;
+}
+
 header nav li {
     cursor: pointer;
     list-style: none;
@@ -76,6 +80,15 @@ header nav li {
 
 header nav li:hover {
     color: var(--cinza);
+}
+
+/* --------- Tabela de Navegar --------------- */
+
+.navegar-menu {
+    display: none;
+    font-size: 15px;
+    padding-left: 40px;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* ---------- Seção do usuario no cabeçalho  --------- */
