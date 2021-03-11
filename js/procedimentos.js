@@ -10,7 +10,7 @@ function exibirBotãoCancelar() {
 /* Animação da barra de pesquisa */
 
 const searchBtn = document.querySelector('.botao-pesquisar');
-const searchBox = document.querySelector('.pesquisa-caixa');
+const searchBox = document.querySelector('#caixa-de-pesquisa');
 let pesquisarBotão = false;
 
 searchBtn.onclick = () => {
@@ -21,6 +21,9 @@ searchBtn.onclick = () => {
     }
     else {
         searchBox.classList.remove("active");
+
+        cancelarBotão.classList.add("não-mostrar-cancelar");
+        cancelarBotão.classList.remove("mostrar-cancelar");
 
         pesquisarBotão = false;
     }

@@ -86,14 +86,20 @@ header nav li:hover {
     align-items: center;
 }
 
+/* ------------ Caixa de Pesquisa ------------- */
+
 #caixa-de-pesquisa {
-    width: 260px;
+    width: 30px;
     height: 33px;
     position: relative;
+    transition: all 0.5s cubic-bezier(0.68, 0.55, 0.265, 1.55);
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid #FFFFFF;
+
+    background-color: transparent;
+    border: none;
 }
 
 .botao-pesquisar {
@@ -103,11 +109,13 @@ header nav li:hover {
     font-size: 18px;
     color: #FBFBFB;
     border-radius: 5px;
-    background:transparent;
+    background: transparent;
+    outline: none;
+    position: relative;
 }
 
 .botao-pesquisar:hover {
-    color: var(--cinza);
+    color: rgba(255, 255, 255, 0.781);
 }
 
 #texto-busca {
@@ -158,7 +166,7 @@ input::-webkit-search-cancel-button {
 }
 
 #caixa-de-pesquisa {
-    background: linear-gradient(0deg, rgba(8, 8, 8, 0.616) 0%, rgba(6, 6, 6, 0.616) 100%);
+    background: transparent;
 }
 
 .Elementos {

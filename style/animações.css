@@ -1,5 +1,9 @@
 /* Nesse CSS estara a formatação da animação e derivados da pagina css  */
 
+:root {
+    --fundo: linear-gradient(0deg, rgba(8, 8, 8, 0.849) 0%, rgba(6, 6, 6, 0.849) 100%);
+}
+
 .girar {
     /* Efeito de girar da seta do conta do usuário */
     transform: scaleY(-1);
@@ -8,5 +12,12 @@
 /* Animação do text box de pesquisa */
 
 #caixa-de-pesquisa.active {
-    width: 350px;
+    width: 260px;
+    height: 33px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--fundo);
+    border: 1px solid #FFFFFF;
 }
