@@ -32,8 +32,8 @@ searchBtn.onclick = () => {
 
 // Animação da seta do usuário
 
-document.querySelector('.usuario-conta').onmouseover = function() { SobrePerfil() };
-document.querySelector('.usuario-conta').onmouseout = function() { ForaPerfil() };
+document.querySelector('.usuario-conta').onmouseover = function() { SobrePerfil(); };
+document.querySelector('.usuario-conta').onmouseout = function() { ForaPerfil(); };
 
 const seta = document.querySelector('.seta');
 
@@ -97,6 +97,15 @@ function mudarValorMenuFalse() {
     menu = false;
 
     verificarSeSaiu();
+}
+
+// Mostrar barra de navegação lateral
+
+const barraBotao = document.querySelector('.barra');
+const navMostrar = document.querySelector('.menu-opcoes');
+
+barraBotao.onclick = () => { 
+    navMostrar.classList.add('mostrar-lateral');
 }
 
 
