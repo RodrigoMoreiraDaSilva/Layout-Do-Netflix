@@ -103,9 +103,60 @@ function mudarValorMenuFalse() {
 
 const barraBotao = document.querySelector('.barra');
 const navMostrar = document.querySelector('.menu-opcoes');
+var barraClique = false;
 
 barraBotao.onclick = () => { 
-    navMostrar.classList.add('mostrar-lateral');
+    if(barraClique == false) {
+        navMostrar.classList.add('mostrar-lateral');
+
+        barraClique = true;
+    }
+    else {
+        navMostrar.classList.remove('mostrar-lateral');
+
+        barraClique = false;
+    }
+}
+
+// Exibição da barra de pesquisa 
+
+const setaBarraDePesquisa = document.querySelector('#pesquisar-seta');
+const secaoUsuario = document.querySelector('.secao-usuario');
+const pesquisarBotaoMostrar = document.querySelector('.search-icon')
+var pesquisaClique = false; 
+
+pesquisarBotaoMostrar.onclick = () => {
+    if(pesquisaClique == false) {
+        secaoUsuario.classList.add('mostrar-barra-de-pesquisa');
+        setaBarraDePesquisa.classList.add('exibir-seta');
+        setaBarraDePesquisa.removeAttribute("id");
+        searchBox.classList.add('active');
+
+        pesquisaClique = true;
+    }
+    else {
+        secaoUsuario.classList.remove('mostrar-barra-de-pesquisa');
+        setaBarraDePesquisa.setAttribute("id", "pesquisar-seta");
+        setaBarraDePesquisa.classList.remove('exibir-seta');
+
+        pesquisaClique = false;
+    }
+}
+
+window.addEventListener('resize', function(){
+	AlterouTamanhoDaJanela();
+});
+
+function AlterouTamanhoDaJanela() {
+    var tamanhoDaJanela = window.innerWidth;
+
+    if(tamanhoDaJanela > 820) {
+        setaBarraDePesquisa.setAttribute("id", "pesquisar-seta");
+        setaBarraDePesquisa.classList.remove('exibir-seta');
+    } else if(pesquisaClique == true) {
+        setaBarraDePesquisa.removeAttribute("id", "pesquisar-seta");
+        setaBarraDePesquisa.classList.add('exibir-seta');
+    }
 }
 
 

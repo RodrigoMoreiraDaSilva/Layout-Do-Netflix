@@ -125,8 +125,8 @@ li[class^="responsividade"] {
         width: 50%;
         text-align: start;
         background: var(--preto-escuro); 
-        top: -140px;
-        left:-65px;
+        top: 70px;
+        left:-35px;
         border: none;
         border-radius: 0;
         position: fixed;
@@ -183,6 +183,7 @@ li[class^="responsividade"] {
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
         margin-left: 1rem;
+        margin-top: 15px;
         cursor: default;
     }
     
@@ -206,6 +207,11 @@ li[class^="responsividade"] {
     /* Responsividade da barra de pesquisa */
 
     .secao-usuario {
+        display: none;
+    }
+
+    .mostrar-barra-de-pesquisa {
+        display: flex;
         width: 290px;
         height: 43px;
         border: 0.5px solid rgba(255, 255, 255, 0.404);
@@ -213,23 +219,28 @@ li[class^="responsividade"] {
         background: var(--fundo-do-header);
         justify-content: center;
         margin-left: 60%;
-        transform: translateY(13px);
+        margin-top: 30px;
         -webkit-box-shadow: 0px 0px 20px 12px rgba(0,0,0,0.65);
         -moz-box-shadow: 0px 0px 20px 12px rgba(0,0,0,0.65);
         box-shadow: 0px 0px 20px 12px rgba(0,0,0,0.65);
     }
 
     i[id^="pesquisar-seta"] {
-        display: block;
-        position: relative;
-        color: var(--cinza);
-        font-size: 25px;
-        z-index: 25;
-        top: 17px;
-        left: 93%;
+        font-size: 0px;
     }
 
     #caixa-de-pesquisa {
+        width: 0px;
+    }
+
+    .exibir-seta {
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        color: var(--cinza);
+        z-index: 25;
+        top: 45px;
+        left: 91%; 
     }
 
     /* Elementos não utilizados */
