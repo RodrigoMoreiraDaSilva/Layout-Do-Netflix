@@ -5,7 +5,10 @@
     --vermelho: #E50914;
     --preto: #181818;
     --preto-escuro: #000000;
+    --letra-transparente: #ffffff85;
     --cinza: rgba(255, 255, 255, 0.562);
+    --fundo-padrão: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(6,6,6,1) 100%);
+    --fundo-topo-scroll: linear-gradient(0deg, rgba(0, 0, 0, 0.158) 0%, rgb(6, 6, 6) 100%);
 }
 
 * {
@@ -16,7 +19,7 @@
 
 
 body {
-    background: var(--preto);
+    background: violet; /* EDITAAAR */
     font-family: 'Arial', Times, serif;
     top: 0px;
     color: white;
@@ -28,13 +31,16 @@ body {
 header {
     height: 4.4rem;  /* mudar para 4.2 */ 
     padding: 20px;
-    background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(6,6,6,1) 100%);
+    width: 100%;
+    background: var(--fundo-topo-scroll);
+    position: fixed;
 }
 
 header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 28px;
     justify-content: space-between;
 }
 
@@ -215,116 +221,121 @@ input::-webkit-search-cancel-button {
     -webkit-transition: -webkit-transform 0.2s;
 }
 
-/* ----------------------------------------------------------------------- */
+/* -------------------------  Filme Principal -------------------------  */
 
 .filme-principal {
-    background: linear-gradient(to right, #040404, #000000, hsla(0, 0%, 40%, 0)), linear-gradient(to top, #040404, #000000, hsla(0, 0%, 40%, 0)), url('../img/The-Queens-Gambit-Poster.jpg');
-    background-position: 0, bottom, 460px  0px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 1020px 550px, 1500px 35px,  900px 550px;
-
-    height: 550px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 50px;
-    padding-top: 10.3rem;
     width: 100%;
-    padding-bottom: 10.2rem;
+    height: 600px;
+    padding-top: 5rem;
+    padding-left: 3.5rem;
+
+    background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.973), hsla(0, 0%, 0%, 0)), linear-gradient(to top, #040404, #00000098, hsla(0, 0%, 40%, 0)),url('../img/The-Queens-Gambit-Poster.jpg');
+    background-size: 70% 100%, 100% 10%, 900px 600px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0, bottom, 100% 0px;
 }
 
-.texto-titulo {
-    color: #FBFBFB;
+.logo-da-obra {
+    width: 40%;
+}
+
+.principais-informacoes {
+    margin-top: 3rem;
+}
+
+/*  Título da Obra  */
+.titulo-da-obra {
     font-size: 30px;
-    padding-bottom: 10px;
+    color: #FBFBFB;
+    font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.filme-principal .descricao {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    width: 80%;
-    color: #FBFBFB;
-}
-
-.titulo-imagem {
-    z-index: 20;
-    padding-bottom: 40px;
-    width: 60%;
-}
-
+/* Dados básicos da obra */
 .informacoes-basicas {
-    display: flex;
+    color: var(--letra-transparente);
+    margin: 0.9rem 0 0.9rem 0;
 }
 
-.texto-transparente {
+p[class^="dados-da-obra"],
+p[class^="classificacao-de-idade"] {
+    display: inline;
     font-size: 15px;
-    padding-top: 5px; 
-    color: #ECF0F1;
-    /* opacity: 0.6; */
-    float: left;
+    letter-spacing: 0.2px;
+    word-spacing: 3px;
+    vertical-align: middle;
+    font-family: 'Arial', sans-serif;
 }
 
-.classificacao {
-    height: 26px;
-    padding-right: 2px;
-    padding-left: 2px;
+p[class^="classificacao-de-idade"] {
+    font-size: 16px;
+    margin-right: 3px;
+    padding: 0 5px 0 4px;
+    border: 1px solid var(--letra-transparente);
+    font-family:  'Arial Narrow', Arial, sans-serif;
 }
 
-.botao {
-    background-color: #5f5c5c59;
+/* Parte da Sinopse */
+
+p[class^="sinopse"] {
+    width: 42%;
+    font-size: 15px;
+    font-family: Arial;
+    line-height: 19px;
+    text-align: justify;
+}
+
+/* Informações da produçaõ e do elenco */
+
+.producao-e-elenco {
+    margin: 0.9rem 0 0.9rem 0;
+}
+
+.topico,
+.responsaveis-e-participantes {
+    display: inline;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+}
+
+.topico {
+    color: var(--letra-transparente);
+}
+
+/* Botões do filme principal */
+
+.botoes-filme-principal {
+    padding: 1rem 0;
+}
+
+button.botao {
     border: none;
-    border-radius: 3px;
-    color: white;
-
-    padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
-
-    cursor: pointer;
     transition: .5s;
-}
-
-.descricao {
-    font-family: 'Verdana';
-    text-align: justify;
-    line-height: 19px;
+    color: white;
     font-size: 15px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    padding: 15px 30px;
+    background-color: #8383837c;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.Estrelando {
-    font-family: 'Verdana';
-    text-align: justify;
-    line-height: 19px;
-    font-size: 15px;
-    padding-bottom: 1rem;
+.botao p,
+button.botao {
+    display: inline;
 }
 
-.texto-atores {
-    padding-right: 5px;
+.botao p {
+    font-weight: bold;
+    margin-left: 5px;
 }
 
-#Atores {
-    padding-top: 5px;
-}
-
-.botao:hover {
-    background-color: white;
+button.botao:hover {
     color: black;
-}
-
-.botao i {
-    margin-right: 10px;
-}
-
-.container {
-    margin-left: 28px;
-}
-
-.filme-principal .container{
-    width: 60% /* fazer por outras midias para 70% */
+    cursor: pointer;
+    background-color: white;
 }
 
 /* Título da seção do carrossel */

@@ -256,3 +256,82 @@ li[class^="responsividade"] {
         display: none;
     }
 }
+
+/* Arrumando detalhes da responsividade */
+
+@media (max-width: 714px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 56%;
+    }
+
+    .exibir-seta {
+        left: 90%;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 50%;
+    }
+
+    .exibir-seta {
+        left: 89%;
+    }
+}
+
+@media (max-width: 595px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 43%;
+    }
+
+    .exibir-seta {
+        left: 87%;
+    }
+}
+
+@media (max-width: 537px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 35%;
+    }
+
+    .exibir-seta {
+        left: 86%;
+    }
+}
+
+@media (max-width: 478px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 30%;
+    }
+
+    .exibir-seta {
+        left: 83%;
+    }
+}
+
+@media (max-width: 445px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 20%;
+    }
+
+    .exibir-seta {
+        left: 82.8%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .mostrar-barra-de-pesquisa  {
+        margin-left: 13%;
+    }
+
+    .exibir-seta {
+        left: 82%;
+    }
+}
