@@ -2,8 +2,10 @@
     --vermelho: #E50914;
     --preto: #181818;
     --preto-escuro: #000000;
-    --cinza: rgba(255, 255, 255, 0.562);
+    --cinza: rgba(255, 255, 255, 0.774);
+    --transparente: rgba(202, 201, 201, 0.801);
     --fundo-do-header: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(6,6,6,1) 100%);
+    --background-header-topo: linear-gradient(0deg, rgba(0, 0, 0, 0.068) 0%, rgba(0, 0, 0, 0.980) 70%, black 100%);
 }
 
 hr {
@@ -82,11 +84,15 @@ li[class^="responsividade"] {
 
 @media (max-width: 820px) {
 
+    body {
+        background: var(--preto-escuro);
+    }
+
     /* Cabeçalho */
     header {
         width: 100%;
         position: fixed;
-        background: var(--preto-escuro); 
+        background: var(--background-header-topo); 
     }
     
     header .container {
@@ -243,11 +249,49 @@ li[class^="responsividade"] {
         left: 91%; 
     }
 
+    /* ---------------- FILME PRINCIPAL ----------------  */
+
+    .filme-principal {
+        height: 450px;
+        padding-left: 0;
+
+        background: linear-gradient(to top, #000000, #000000c4, #00000000), url('../img/The-Queens-Gambit-Responsividade.jpg');
+        background-size: 100% 15%, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom, 50% 0px;
+    }
+
+    .mediador-filme-principal {
+        margin-top: 19rem;
+        text-align: center;
+    }
+
+    .informacoes-basicas {
+        color: var(--transparente);
+    }
+
+    p[class^="classificacao-de-idade"] {
+        border: 1px solid var(--transparente);
+    }
+
+    button.botao {
+        margin-bottom: 1rem;
+    }
+
+    /* Seção de catalogo de filmes */
+    
+    .secao-preferidas {
+        margin-top: 20vh;
+    }
+
     /* Elementos não utilizados */
 
     .perfil, 
     .seta,
+    .sinopse,
+    .logo-da-obra,
     .navegar-menu, 
+    .producao-e-elenco,
     .Elementos-interativos {
         display: none;
     }
@@ -256,6 +300,11 @@ li[class^="responsividade"] {
         display: none;
     }
 }
+
+
+
+
+
 
 /* Arrumando detalhes da responsividade */
 

@@ -19,7 +19,7 @@
 
 
 body {
-    background: violet; /* EDITAAAR */
+    background: var(--preto); /* EDITAAAR */
     font-family: 'Arial', Times, serif;
     top: 0px;
     color: white;
