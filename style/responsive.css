@@ -93,8 +93,14 @@ li[class^="responsividade"] {
         width: 100%;
         position: fixed;
         background: var(--background-header-topo); 
+        transition: background-color .5s ease;
     }
     
+    header.barra-lateral-ativada,
+    header.cabecalho-scroll {
+        background: var(--preto-escuro);
+    }
+
     header .container {
         display: inline;
         justify-content: flex-start;

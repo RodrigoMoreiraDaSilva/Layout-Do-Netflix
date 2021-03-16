@@ -17,7 +17,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: var(--preto); /* EDITAAAR */
     font-family: 'Arial', Times, serif;
@@ -47,6 +46,10 @@ header .container {
 header section {
     display: inline-flex;
     align-items: center;
+}
+
+header.cabecalho-scroll {
+    background: var(--fundo-padrão);
 }
 
 .cabecalho-responsivo {
@@ -133,6 +136,7 @@ header nav li:hover {
     background: transparent;
     outline: none;
     position: relative;
+    cursor: pointer;
 }
 
 .botao-pesquisar:hover {

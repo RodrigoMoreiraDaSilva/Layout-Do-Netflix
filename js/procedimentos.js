@@ -1,3 +1,11 @@
+// Mudar header de acordo com o scroll
+
+window.addEventListener('scroll', function() {
+    let cabeçalho = document.querySelector('header');
+    let scrollPosicao = window.scrollY > 0;
+    cabeçalho.classList.toggle('cabecalho-scroll', scrollPosicao);
+})
+
 // O botão de cancelar aparecer somente com o foco no input
 
 const cancelarBotão = document.querySelector('.cancelar-texto');
@@ -101,6 +109,7 @@ function mudarValorMenuFalse() {
 
 // Mostrar barra de navegação lateral
 
+const cabecalho = document.querySelector('header');
 const barraBotao = document.querySelector('.barra');
 const navMostrar = document.querySelector('.menu-opcoes');
 var barraClique = false;
@@ -108,11 +117,13 @@ var barraClique = false;
 barraBotao.onclick = () => { 
     if(barraClique == false) {
         navMostrar.classList.add('mostrar-lateral');
+        cabecalho.classList.add('barra-lateral-ativada');
 
         barraClique = true;
     }
     else {
         navMostrar.classList.remove('mostrar-lateral');
+        cabecalho.classList.remove('barra-lateral-ativada');
 
         barraClique = false;
     }
