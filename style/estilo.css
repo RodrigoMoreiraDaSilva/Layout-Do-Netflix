@@ -33,6 +33,7 @@ header {
     width: 100%;
     background: var(--fundo-topo-scroll);
     position: fixed;
+    z-index: 9999;
 }
 
 header .container {
