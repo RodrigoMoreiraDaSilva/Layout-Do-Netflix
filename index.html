@@ -7,10 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./img/Elementos/netflix-icon.png" type="image/x-icon">
 
+        <!-- Estilizações usadas  -->
         <link rel="stylesheet" href="./style/estilo.css">
         <link rel="stylesheet" href="./style/Modal.css">
         <link rel="stylesheet" href="./style/carrossel.css">
         <link rel="stylesheet" href="./style/animações.css">
+        <link rel="stylesheet" href="./style/catalogo-filmes.css">
 
         <!-- Linkando as font icons utilizadas -->
         <link rel="stylesheet" href="./fonts/icofont/icofont.min.css">
@@ -19,6 +21,10 @@
 
         <!--Linkando o estilo de responsividade  -->
         <link rel="stylesheet" href="./style/responsive.css">
+
+        <!-- Linkando o estilo do Swiper.js -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
         <!--Linkando css do jquery Owl Carousel-->
         <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
         <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
@@ -145,6 +151,94 @@
             </div>
         </main>
 
+        <!-- --------------------------- CARROSSEL UM -----------------------------  -->
+
+        
+        <section class="catalogo-de-filmes">
+            <h2 class="titulo-catalogo">
+                Populares no Netflix 
+                <p class="ver-tudo">Ver tudo <i class="fas fa-chevron-right"></i></p> 
+            </h2>
+
+            <!-- Slider main container -->
+            <div class="miniatura-container swiper-container">
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <!-- Primeira seção de filmes -->
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/The-Crown.jpg" alt="The Crown">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Eu-nunca.jpg" alt="Eu Nunca">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Lucifer.jpg" alt="Lúcifer">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Outlander.jpg" alt="Outlander">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/The-100.jpg" alt="Os 100">
+                        </a>
+                    </div>
+
+                    <!-- Segunda seção de filmes  -->
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/bridgerton.jpg" alt="bridgerton">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Ginny-e-georgia.jpg" alt="Ginny e Georgia">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Umbrella Academy.jpg" alt="The Umbrella Academy">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Orange-is-the-new-black.jpg" alt="Laranja é o novo preto">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Desencanto.jpg" alt="Desencanto">
+                        </a>
+                    </div>
+
+                </div>
+  
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </section>
+
         <!-- Parte do catálogo de filmes e séries (Carrossel) -->
 
         <section class="secao-preferidas">
@@ -243,16 +337,6 @@
         <section>
             <h2 class="Titulo-secao">Populares no Netflix</h2>
         </section>
-
-
-        <div class="catalogo-de-filmes">
-
-            <section class="obras">
-                
-            </section>
-
-        </div>
-
 
         <!-- Outro carrossel  -->
         <div class="container-carrossel">
@@ -570,7 +654,9 @@
             </div>
         </div> 
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/0e06257c75.js"></script>
+        <script src="./js/catalogo-filmes.js"></script>
         <script src="js/owl/jquery.min.js"></script>
         <script src="js/owl/owl.carousel.min.js"></script>
         <script src="js/setup.js"></script>

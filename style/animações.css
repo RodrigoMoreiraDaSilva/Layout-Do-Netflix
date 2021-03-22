@@ -112,3 +112,31 @@
                 transform: none;
         }
 }
+
+/* ------------ Animação do ver tudo  ----------- */   
+
+.ver-tudo {
+        animation: texto-animacao .5s reverse;
+}
+
+.ver-tudo i {
+        
+}
+
+.ver-tudo.exibir-verTudo {
+        display: block;
+        animation: texto-animacao 1.2s 1;
+}
+
+.ver-tudo.exibir-verTudo i {
+        animation: texto-animacao .5s 1;
+        position: absolute;
+        margin-left: 3px;
+}
+
+@keyframes texto-animacao {
+        0% {
+                color: transparent;
+                margin-left: -30px;
+        }
+}
