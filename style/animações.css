@@ -119,16 +119,16 @@
         animation: texto-animacao .5s reverse;
 }
 
-.ver-tudo i {
-        
-}
-
-.ver-tudo.exibir-verTudo {
+.titulo-catalogo:hover .ver-tudo {
         display: block;
-        animation: texto-animacao 1.2s 1;
+        animation: texto-animacao 1.2s 1
 }
+/* 
+.ver-tudo.exibir-verTudo {
+        ;
+} */
 
-.ver-tudo.exibir-verTudo i {
+.titulo-catalogo:hover .ver-tudo i {
         animation: texto-animacao .5s 1;
         position: absolute;
         margin-left: 3px;

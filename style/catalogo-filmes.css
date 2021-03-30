@@ -1,5 +1,6 @@
 :root{
     --raio-da-borda: 4px;
+    --tamanho-do-botao: 35.61px;
 }
 
 /* estilizando o catalogo */
@@ -13,7 +14,7 @@
     font-weight: 600;
     line-height: 14px;
     display: inline-flex;
-    margin: 0 4% 12px;
+    margin: 0 0% 12px;
     align-items: center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -99,3 +100,65 @@
         display: block;
     }
 }
+
+/* Estilizando o layout hover */
+
+.esquema-suspenso {
+    width: 320px;
+    height: 130px;
+    padding: 16px;
+    -webkit-box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.75);
+    background: #181818;
+}
+
+.interatividade {
+    width: 100%;
+}
+
+.acoes-interativas,
+.interatividade {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.acoes-interativas button {
+    width: var(--tamanho-do-botao);
+    height: var(--tamanho-do-botao);
+    border: none;
+    border-radius: 50%;
+    background: #2A2A2A;
+    margin-right: .5rem;
+}
+
+.acoes-interativas button img {
+    width: var(--tamanho-do-botao);
+    height: var(--tamanho-do-botao);
+    cursor: pointer;
+    border-radius: 50%;
+    filter: brightness(1) invert();
+    border: 2px solid #5B5B5B;
+}
+
+.acoes-interativas button:first-child img {
+    border: 2px solid white;
+    filter: none;
+    background: white;
+}
+
+.acoes-interativas button:hover img {
+    border: 2px solid black;
+}
+
+/* Hover do carrossel  */
+
+/* .slide-obra.swiper-slide {
+    transition: 250ms all;
+}
+
+.slide-obra.swiper-slide:hover {
+    transform: scale(1.7);
+    width: 100%;
+    z-index: 99;
+} */

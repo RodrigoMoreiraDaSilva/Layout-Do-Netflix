@@ -1,1 +1,19 @@
-<svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m466 87.987h-116.058c15.216-21.824 13.112-52.143-6.344-71.598-21.834-21.835-57.361-21.835-79.195 0-2.451 2.451-5.378 6-8.402 12.003-3.025-6.003-5.951-9.552-8.402-12.003-21.834-21.835-57.361-21.835-79.195 0-19.455 19.455-21.559 49.773-6.344 71.598h-116.06c-25.364 0-46 20.636-46 46v36c0 20.484 13.461 37.877 32 43.814v252.186c0 25.364 20.636 46 46 46h146 64 146c25.364 0 46-20.636 46-46v-252.186c18.539-5.938 32-23.331 32-43.814v-36c0-25.364-20.636-46-46-46zm-194 96h-32v-64h32zm3.764-109.544c4.942-28.425 10.633-34.794 11.266-35.427 4.679-4.679 10.825-7.018 16.971-7.018s12.292 2.339 16.971 7.018c9.357 9.358 9.357 24.583 0 33.941-.629.629-6.96 6.288-35.17 11.221-4.106.718-8.113 1.319-11.81 1.816.486-3.612 1.072-7.527 1.772-11.551zm-84.735-35.427c4.679-4.679 10.825-7.018 16.971-7.018s12.292 2.339 16.971 7.018c.629.629 6.288 6.96 11.221 35.169.718 4.106 1.319 8.114 1.816 11.811-3.612-.487-7.528-1.073-11.551-1.773-28.425-4.942-34.794-10.633-35.427-11.266-9.358-9.357-9.358-24.583-.001-33.941zm-159.029 94.971c0-7.72 6.28-14 14-14h162v64h-160-2c-7.72 0-14-6.28-14-14zm32 332v-250h144v264h-130c-7.72 0-14-6.28-14-14zm176 14v-264h32v264zm208-14c0 7.72-6.28 14-14 14h-130v-264h144zm32-296c0 7.72-6.28 14-14 14h-2-160v-64h162c7.72 0 14 6.28 14 14z"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;" viewBox="0 0 308 307.807" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+   
+    .fil1 {fill:black}
+    .fil0 {fill:black;fill-rule:nonzero}
+   
+  </style>
+  </defs>
+  <g>
+    <path class="fil0" d="M139 93c47,-210 255,1 0,0zm19 -15c181,-3 38,-140 0,0z"/>
+    <path class="fil1" d="M0 79l308 0 0 76 -308 0 0 -76zm17 17l274 0 0 42 -274 0 0 -42z"/>
+    <path class="fil1" d="M27 139l254 0 0 165 -254 0 0 -165zm145 17l0 130 91 0 0 -130 -91 0zm-36 130l0 -130 -91 0 0 130 91 0z"/>
+    <path class="fil0" d="M161 93c-47,-210 -254,1 0,0zm-18 -15c-182,-3 -38,-140 0,0z"/>
+  </g>
+  <text x="0" y="319" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" style="white-space: pre;">Created by sandiindra</text>
+  <text x="0" y="324" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" style="white-space: pre;">from the Noun Project</text>
+</svg>

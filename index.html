@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+    <!-- Porta - http://127.0.0.1:5500/index.html -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,6 @@
         <!-- Linkando as font icons utilizadas -->
         <link rel="stylesheet" href="./fonts/icofont/icofont.min.css">
         <link rel="stylesheet" href="./fonts/flaticon/flaticon.css">
-        
 
         <!--Linkando o estilo de responsividade  -->
         <link rel="stylesheet" href="./style/responsive.css">
@@ -153,28 +153,147 @@
 
         <!-- --------------------------- CARROSSEL UM -----------------------------  -->
 
-        
         <section class="catalogo-de-filmes">
-            <h2 class="titulo-catalogo">
-                Populares no Netflix 
-                <p class="ver-tudo">Ver tudo <i class="fas fa-chevron-right"></i></p> 
-            </h2>
 
             <!-- Slider main container -->
             <div class="miniatura-container swiper-container">
 
+                <h2 class="titulo-catalogo">
+                    Minha lista
+                    <p class="ver-tudo">Ver tudo <i class="fas fa-chevron-right"></i></p> 
+                </h2>
+
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper pacote-swiper">
 
                     <!-- Slides -->
                     <!-- Primeira seção de filmes -->
+                    <div class="swiper-slide slide-obra">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/The-Crown.jpg" alt="The Crown">
+                        </a>
+
+                        <div class="esquema-suspenso">
+
+                            <section class="interatividade">
+                               <section class="acoes-interativas">
+                                   <button>
+                                       <img src="./img/Elementos/play.svg">
+                                   </button>
+
+                                   <button>
+                                       <img src="./img/Elementos/check.svg">
+                                   </button>
+
+                                   <button>
+                                       <img src="./img/Elementos/curtir.svg">
+                                   </button>
+
+                                   <button>
+                                       <img src="./img/Elementos/discurtir.svg">
+                                   </button>
+
+                               </section>
+
+                               <section class="mais-detalhes">
+                                    <button>
+                                        <img src="./img/Elementos/expandir.svg">
+                                    </button>
+                               </section>
+                               
+                           </section>
+                           
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide slide-obra">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Eu-nunca.jpg" alt="Eu Nunca">
+                        </a>
+                    </div>
+
                     <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Lucifer.jpg" alt="Lúcifer">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Outlander.jpg" alt="Outlander">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/The-100.jpg" alt="Os 100">
+                        </a>
+                    </div>
+
+                    <!-- Segunda seção de filmes  -->
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/bridgerton.jpg" alt="bridgerton">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Ginny-e-georgia.jpg" alt="Ginny e Georgia">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Umbrella Academy.jpg" alt="The Umbrella Academy">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Orange-is-the-new-black.jpg" alt="Laranja é o novo preto">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a class="miniatura-ancora" href="#">
+                            <img class="miniatura-catalogo" src="./img/Capas/_Populares/Desencanto.jpg" alt="Desencanto">
+                        </a>
+                    </div>
+
+                </div>
+  
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </section>
+
+        <section class="catalogo-de-filmes">
+
+            <!-- Slider main container -->
+            <div class="miniatura-container swiper-container">
+
+                <h2 class="titulo-catalogo">
+                    Em alta
+                    <p class="ver-tudo">Ver tudo <i class="fas fa-chevron-right"></i></p> 
+                </h2>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper pacote-swiper">
+
+                    <!-- Slides -->
+                    <!-- Primeira seção de filmes -->
+                    <div class="swiper-slide slide-obra">
                         <a class="miniatura-ancora" href="#">
                             <img class="miniatura-catalogo" src="./img/Capas/_Populares/The-Crown.jpg" alt="The Crown">
                         </a>
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slide-obra">
                         <a class="miniatura-ancora" href="#">
                             <img class="miniatura-catalogo" src="./img/Capas/_Populares/Eu-nunca.jpg" alt="Eu Nunca">
                         </a>

@@ -7,8 +7,8 @@
     --preto-escuro: #000000;
     --letra-transparente: #ffffff85;
     --cinza: rgba(255, 255, 255, 0.562);
-    --fundo-padrão: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(6,6,6,1) 100%);
-    --fundo-topo-scroll: linear-gradient(0deg, rgba(0, 0, 0, 0.158) 0%, rgb(6, 6, 6) 100%);
+    --fundo-padrão: linear-gradient(0deg, var(--preto) 0%, var(--preto-escuro) 100%);
+    --fundo-topo-scroll: linear-gradient(0deg, rgba(0, 0, 0, 0.034) 0%, rgb(6, 6, 6) 100%);
 }
 
 * {
@@ -202,10 +202,6 @@ input::-webkit-search-cancel-button {
     filter: brightness(0) invert(1);
 }
 
-.Elementos:hover {
-    height: 28px;
-}
-
 .perfil {
     margin-left: 25px;
     height: 30px;
@@ -240,11 +236,6 @@ input::-webkit-search-cancel-button {
     background-size: 100% 7%, 100% 100%, 100% 100%;
     background-position: bottom, 0, 0;
     background-repeat: no-repeat, no-repeat, no-repeat;
-
-    /* background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.973), hsla(0, 0%, 0%, 0)), linear-gradient(to top, #040404, #00000098, hsla(0, 0%, 40%, 0)),url('../img/The-Queens-Gambit-Poster.jpg');
-    background-size: 70% 100%, 100% 10%, 900px 600px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0, bottom, 100% 0px; */
 }
 
 .logo-da-obra {
@@ -329,7 +320,7 @@ button.botao {
     font-size: 15px;
     border-radius: 5px;
     margin-right: 1rem;
-    padding: 15px 30px;
+    padding: 13px 30px;
     background-color: #8383837c;
     font-family: Arial, Helvetica, sans-serif;
 }
