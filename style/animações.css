@@ -121,7 +121,7 @@
 
 .titulo-catalogo:hover .ver-tudo {
         display: block;
-        animation: texto-animacao 1.2s 1
+        animation: texto-animacao 1.2s 1;
 }
 /* 
 .ver-tudo.exibir-verTudo {

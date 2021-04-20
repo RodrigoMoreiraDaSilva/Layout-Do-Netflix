@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 :root {
     --vermelho: #E50914;
@@ -84,10 +83,15 @@ header nav li {
     cursor: pointer;
     list-style: none;
     font-size: 15px;
+    font-weight: 500;
     margin-right: 20px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Rubik', sans-serif;
+    color: #e5e5e5;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+li[class^="inicio"]{
+    font-weight: 600;
 }
 
 header nav li:hover {

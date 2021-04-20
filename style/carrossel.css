@@ -1,0 +1,191 @@
+:root {
+    --fonte: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --fundo-botao: rgba(24, 24, 24, 0.5);
+    --raio-da-miniatura: 4px;
+    --padding: 60px;
+    --margem: 4%;
+    --borda: 4px;
+}
+
+/* --------------- Catalogo de Filmes --------------  */
+
+h2 {
+    font-family: var(--fonte);
+    font-size: 19px;
+    line-height: 15px;
+    font-weight: 700;
+    margin: 0 8px 12px 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.carrossel-de-filmes.swiper-container {
+    padding: 0 var(--margem);
+}
+
+.filme-ancora {
+    width: 20%;
+    height: 30rem;
+}
+
+.filme-ancora .miniatura {
+    width: 100%;
+    border-radius: var(--borda);
+}
+
+.carrossel-de-filmes .swiper-button-prev,
+.carrossel-de-filmes .swiper-button-next {
+    height: 50%;
+    width: calc(4% - 5px);
+    top: 30%;
+    bottom: 0;
+    margin: 0;
+    background-color: var(--fundo-botao);
+}
+
+.carrossel-de-filmes .swiper-button-prev {
+    left: 0;
+    border-top-right-radius: var(--borda);
+    border-bottom-right-radius: var(--borda);
+}
+
+.carrossel-de-filmes .swiper-button-next {
+    right: 0;
+    border-top-left-radius: var(--borda);
+    border-bottom-left-radius: var(--borda);
+}
+
+.carrossel-de-filmes .swiper-button-prev::after,
+.carrossel-de-filmes .swiper-button-next::after {
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+}
+
+@media screen and (min-width: 640px) {
+
+    .catalogo-de-filmes {
+        margin-top: -8%;
+    }
+
+    .Catalogo:nth-child(2) {
+        transform: translateY(-60px);
+    }
+
+    .Catalogo:nth-child(3) {
+        transform: translateY(-120px);
+    }
+
+    .detalhes-superiores {
+        transform: translateY(var(--padding));
+    }
+
+    .carrossel-de-filmes .swiper-button-prev,
+    .carrossel-de-filmes .swiper-button-next {
+        background-color: transparent;
+    } 
+
+    .carrossel-de-filmes:hover .swiper-button-prev,
+    .carrossel-de-filmes:hover .swiper-button-next {
+        background-color: var(--fundo-botao);
+    }
+
+    .carrossel-de-filmes .swiper-button-prev::after,
+    .carrossel-de-filmes .swiper-button-next::after {
+        display: none;
+        font-size: 2.4vw;
+    }
+
+    .carrossel-de-filmes .swiper-button-prev:hover::after,
+    .carrossel-de-filmes .swiper-button-next:hover::after {
+        transform: scale(1.25);
+    }
+
+    .carrossel-de-filmes:hover .swiper-button-prev::after,
+    .carrossel-de-filmes:hover .swiper-button-next::after {
+        display: block;
+    }
+
+    .carrossel.swiper-wrapper {
+        padding: var(--padding) 0;
+    }
+
+    .filmes.swiper-slide {
+        transition: 250ms all;
+    }
+
+    .filmes.swiper-slide:hover {
+        transform: scale(1.7);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .filmes.swiper-slide[id^="ampliar_esquerda"]:hover {
+        margin-left: 6.6%;
+    }
+    
+    .filmes.swiper-slide[id^="ampliar_direita"]:hover {
+        margin-left: -6.6%;
+    }
+
+    .filmes.Originais.swiper-slide:hover {
+        margin-left: 1%;
+    }
+
+    .filmes.Originais.swiper-slide:hover {
+        transform: scale(1.1);       
+    }
+
+    /* ---------- Edição do Ver Tudo -----------  */
+
+    .ver-tudo {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 8px;
+        display: none;
+        align-items: center;
+        font-size: 13px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .ver-tudo i {
+        font-size: 12px;
+        margin-left: 4px;
+    }
+
+    h2 {
+        display: inline-flex;
+    }
+
+    h2:hover .ver-tudo {
+        animation: label-animacao 1.2s 1;
+        display: inline-flex;
+    }
+
+    h2:hover .ver-tudo i {
+        animation: seta-animacao .3s 1;
+    }
+}
+
+@keyframes label-animacao {
+    0% {
+        color: transparent;
+        margin-left: -10px;
+    }
+    100% {
+        color: #fff;
+        margin-left: 8px;
+    }
+}
+
+@keyframes seta-animacao {
+    0% {
+        color: transparent;
+        margin-left: -30px;
+    }
+    100% {
+        color: white;
+        margin-left: 4px;
+    }
+}
