@@ -35,9 +35,9 @@ h2 {
 
 .carrossel-de-filmes .swiper-button-prev,
 .carrossel-de-filmes .swiper-button-next {
-    height: 50%;
+    height: 100%;
     width: calc(4% - 5px);
-    top: 30%;
+    top: 0;
     bottom: 0;
     margin: 0;
     background-color: var(--fundo-botao);
@@ -75,6 +75,10 @@ h2 {
 
     .Catalogo:nth-child(3) {
         transform: translateY(-120px);
+    }
+    
+    .Catalogo:nth-child(4) {
+        transform: translateY(-180px);
     }
 
     .detalhes-superiores {
@@ -129,8 +133,12 @@ h2 {
         margin-left: -6.6%;
     }
 
-    .filmes.Originais.swiper-slide:hover {
+    .filmes.Originais.swiper-slide[id^="ampliar_esquerda"]:hover {
         margin-left: 1%;
+    }
+
+    .filmes.Originais.swiper-slide[id^="ampliar_direita"]:hover {
+        margin-left: -0.8%;
     }
 
     .filmes.Originais.swiper-slide:hover {
