@@ -1,0 +1,88 @@
+footer {
+    display: flexbox;
+    margin: -11rem 15% 0;
+    background: transparent;
+}
+
+/* --------- Redes Sociais ------------  */
+.redes-sociais {
+    display: inline-flex;
+}
+
+.icone_redes-sociais {
+    width: 30px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+    background: transparent;
+}
+
+.icone_redes-sociais img {
+    width: 100%;
+    height: 100%;
+    filter: invert(57%) sepia(0%) saturate(1381%) hue-rotate(173deg) brightness(88%) contrast(82%);
+}
+
+/*  ---------------- Configuraçõs, feedback e detalhes -----------  */
+
+.configuracoes-e-feedback {
+    display: block;
+    margin-top: 10px;
+}
+
+.configuracoes-e-feedback_container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.nav_opcoes li {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    color: #808080;
+    line-height: 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav_opcoes li:hover {
+    text-decoration: underline;
+}
+
+/* -------- Botão Código do serviço --------  */
+
+.codigo-do-servico {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 1px #808080 solid;
+    background: transparent;
+    color: #808080;
+    margin-top: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.codigo-do-servico p {
+    padding: 6px;
+}
+
+.codigo-do-servico:hover {
+    color: white;
+    font-weight: 400;
+}
+
+.informacoes-finais,
+.creditacao {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #808080;
+    font-size: 13px;
+}
+
+.creditacao {
+    margin-top: 8px;
+}
+
+.informacoes-finais {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
