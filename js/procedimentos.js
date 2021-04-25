@@ -139,17 +139,14 @@ var pesquisaClique = false;
 pesquisarBotaoMostrar.onclick = () => {
     if(pesquisaClique == false) {
         secaoUsuario.classList.add('mostrar-barra-de-pesquisa');
-        setaBarraDePesquisa.classList.add('exibir-seta');
-        setaBarraDePesquisa.removeAttribute("id");
         searchBox.classList.add('active');
+        cabecalho.classList.add('barra-lateral-ativada');
 
         pesquisaClique = true;
     }
     else {
         secaoUsuario.classList.remove('mostrar-barra-de-pesquisa');
-        setaBarraDePesquisa.setAttribute("id", "pesquisar-seta");
-        setaBarraDePesquisa.classList.remove('exibir-seta');
-
+        cabecalho.classList.remove('barra-lateral-ativada');
         pesquisaClique = false;
     }
 }

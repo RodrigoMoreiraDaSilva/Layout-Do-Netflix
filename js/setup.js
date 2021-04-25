@@ -14,12 +14,13 @@ const swiper = new Swiper('.swiper-container', {
     },
 
     breakpoints: {
+
         //quando o tamanho da janela estiver >= 640px
 
-        640: {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
-            freeMode: false,
+        820: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          freeMode: false,
         }
     }
   });

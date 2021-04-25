@@ -9,20 +9,24 @@
     transform: scaleY(-1);
 }
 
-/* Animação do text box de pesquisa */
 
-#caixa-de-pesquisa.active {
-    width: 260px;
-    height: 33px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: var(--fundo);
-    border: 1px solid #FFFFFF;
-}
 
 /* Animação da barra responsiva */
+
+@media (min-width: 821px) {
+        /* Animação do text box de pesquisa */
+        
+    #caixa-de-pesquisa.active {
+        width: 260px;
+        height: 33px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: var(--fundo);
+        border: 1px solid #FFFFFF;
+    }
+}
 
 @media (max-width: 820px) { 
     .mostrar-lateral {

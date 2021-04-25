@@ -63,7 +63,7 @@ h2 {
     transition: transform 0.1s ease-out;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 821px) {
 
     .catalogo-de-filmes {
         margin-top: -8%;

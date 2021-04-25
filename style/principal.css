@@ -144,8 +144,8 @@ header nav li:hover {
     cursor: pointer;
 }
 
-.botao-pesquisar:hover {
-    color: rgba(255, 255, 255, 0.781);
+.botao-pesquisar i {
+    font-size: 18px;
 }
 
 #texto-busca {
@@ -199,11 +199,20 @@ input::-webkit-search-cancel-button {
     background: transparent;
 }
 
+.Elementos-interativos {
+    display: inline-flex;
+    align-items: center;
+}
+
 .Elementos {
     height: 25px;
     cursor: pointer;
     margin-left: 25px;
     filter: brightness(0) invert(1);
+}
+
+.Elementos:first-child {
+    height: 20px;
 }
 
 .perfil {
