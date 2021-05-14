@@ -68,14 +68,13 @@
 
 > Na resolução de 1000px *(versão final do Bootcamp da [Digital Innovation One](https://digitalinnovation.one))*.
 
-![](img/Screenshots/0.0.1.png)
+![](./assets/Screenshots/0.0.1.png)
 
 <p align="center"><code> 🕗 2º Versão 🕗 </code> </p>
 
 > Demonstração das funcionalidades dessa versão na resolução de 1000px `(responsividade ainda não configurada)`.
 
-![](./img/Screenshots/1.0.0.gif)
-
+![](./assets/Screenshots/1.0.0.gif)
 
 ****
 
