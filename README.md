@@ -48,31 +48,29 @@
 
 ### ⚙️ Recursos
 
-- [x] Uso da biblioteca JQuery de carrossel.
+- [x] Responsividade.
+- [x] Uso da framework swiper.js de carrossel.
 - [x] Layout dinâmico e semelhante ao original.
 - [x] Cabeçalho/Barra de navegação com barra de pesquisa.
 - [x] Carrossel com o catálogo de filmes e séries disponíveis.
 - [ ] Sistema de sugestão de preenchimento na borda de pesquisa.
-- [x] Modal dinâmico que exibe informações básicas do filme e/ou série.
+- [ ] Modal "Pop up" que exibe informações básicas do filme e/ou série.
+- [ ] Uso de tooltips (Dicas de contexto) que explicam o que cada botão faz.
 - [ ] Sistema de busca simples que redireciona a tela ao elemento solicitado na busca.
 - [ ] Menu drop-down (Menu suspenso) na barra de navegação que exibe as opções de cada seção do menu.
-- [x] Botões funcionais que exercem funções no sistema do site (redirecionar para outras páginas e etc).
-- [x] Uso de tooltips (Dicas de contexto) em determinadas partes do layout que explicam o que cada um dos botões fazem.
-- [ ] Cabeçalho fixo e dinâmico que acompanha o scroll e altera seus atributos de acordo com o ponto em que a página se encontra.
-- [ ] Responsividade: Interface multiplataforma que é projetada para ser eficiente e dinâmica em diversos tipos de resoluções (do mobile ao desktop).
-- [x] Modal dinâmico: Uma pequena interface "pop up" animada que é exibida após clicar no filme, exibindo as principais opções e características do filme/série para o usuário.
+- [x] Cabeçalho fixo que acompanha o scroll e altera seus atributos de acordo com o ponto em que a página se encontra.
 
 ****
 
 ### 🎥 Demonstração
 
-<p align="center"><code> 🕗 VERSÃO 0.0.1 🕗 </code> </p>
+<p align="center"><code> 🕗 1º versão 🕗 </code> </p>
 
-> Na resolução de 1000px *(versão final do curso)*.
+> Na resolução de 1000px *(versão final do Bootcamp da [Digital Innovation One](https://digitalinnovation.one))*.
 
 ![](img/Screenshots/0.0.1.png)
 
-<p align="center"><code> 🕗 VERSÃO 1.0.0 🕗 </code> </p>
+<p align="center"><code> 🕗 2º Versão 🕗 </code> </p>
 
 > Demonstração das funcionalidades dessa versão na resolução de 1000px `(responsividade ainda não configurada)`.
 
@@ -83,17 +81,13 @@
 
 ### 💾 Pré-Requisitos: 
 
-- Para a execução desse projeto, não é necessário muita coisa, somente um conhecimento básico ou intermediário de html, css e javascript, além de ter baixado em sua máquina o framework Jquery [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/).
-
-> ☛ O framework já está incluido no repositorio, sendo assim, ao copiar o repositorio, tudo o que for necessário já estará incluso.
-
 - Uma IDE é essencial, mesmo não sendo obrigatório, é bem aconselhável, pois as IDES ajudam muito no desenvolvimento do projeto. Recomendo o uso do [Visual Studio Code](https://code.visualstudio.com/download).
 
 ****
 
 ### 📲 Como visualizar <p id="#Como-visualizar"> 
 
-- Para visualizar a página, primeiramente, copie o repositório em sua máquina. Para isso, no terminal, digite os seguintes comandos e pressione `enter` para realizar o procedimento:
+- Para visualizar a página, primeiramente, clone o repositório em sua máquina. Para isso, no terminal, digite os seguintes comandos e pressione `enter` para realizar o procedimento:
 ```
 # Criar clone local do projeto
 $ git clone https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix.git
@@ -101,7 +95,7 @@ $ git clone https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix.git
 # Entrar no diretório
 $ cd Layout-Do-Netflix
 ```
-- Após clonar o repositório em sua máquina local, abra o diretório em seu editor de texto e confira se os diretórios estão sendo referenciados corretamente. Para visualizar a página, abra o arquivo `index.html` em seu navegador de preferência — particularmente, eu uso o [Opera](https://www.opera.com/pt-br/computer/opera) — e confira se tudo está sendo devidamente exibido. 
+- Após clonar o repositório em sua máquina local, abra o diretório em seu editor de texto e mão na massa 💪. Para visualizar a página, abra o arquivo `index.html` em seu navegador de preferência e confira se tudo está sendo devidamente exibido. 
 
 ****
 
@@ -110,7 +104,7 @@ $ cd Layout-Do-Netflix
 - Principais tecnologias usadas no processo de criação desse projeto (clique nos badgers para ser direcionado para a `"documentação"` de cada tecnologia).
 
 [![badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![badge](https://img.shields.io/badge/JQuery-323330?style=for-the-badge&logo=jquery&logoColor=white&color=a31d1d)](https://owlcarousel2.github.io/OwlCarousel2/)
+[![badge](https://img.shields.io/badge/Swiper-323330?style=for-the-badge&logo=swiper&logoColor=white&color=6332f6)](https://swiperjs.com)
 [![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
@@ -124,10 +118,10 @@ $ cd Layout-Do-Netflix
 
 [![Badge Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/RodrogaDev)
 [![Badge Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rodrigo-m0reira-da-silva/)
-![Badge Gmail](https://img.shields.io/badge/rodrigomoreira.stud@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+![Badge Gmail](https://img.shields.io/badge/rodrigomoreiradasilva.of@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
 ****
 <p align="center">
-    <b> <i> Copyright (c) 2021 Rodrigo Moreira da Silva & Digital innovation One </i> </b>
+    <b> <i> Copyright (c) 2021 Rodrigo Moreira da Silva</i> </b>
 </p>
   <p align="center"> <a href="https://github.com/RodrigoMoreiraDaSilva/Layout-Do-Netflix/blob/master/LICENSE"> <img src="https://img.shields.io/badge/LICENSE-MIT-%237159c1?style=for-the-badge&color=061430&labelColor=395ea8"> </a> </p>
