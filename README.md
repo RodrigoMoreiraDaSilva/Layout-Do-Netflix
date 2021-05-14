@@ -1,5 +1,5 @@
 
-<h1 align="center"> Recriação do layout do Netflix </h1>
+<h1 align="center"> Recriando o layout do Netflix </h1>
 <h3 align="center"> 📝 Descrição do projeto </h3>
 <p align="center"> Esse projeto foi desenvolvido como parte do processo de conclusão do <code>BOOTCAMP</code> de html web developer da Digital Innovation one. Nesse repositório, básicamente, fiz uma cópia do layout da página inicial da plataforma de catálogo de produções audio-visuais, o Netflix. </p> 
 
