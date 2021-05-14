@@ -125,7 +125,8 @@ li[class^="responsividade"] {
         position: absolute;
         display: inline-flex;
         align-items: center;
-        transform: translateX(-30px);
+        padding-right: 10%;
+        margin-left: -2%;
         justify-content: space-between;
     }
 
@@ -244,7 +245,7 @@ li[class^="responsividade"] {
     }
 
     #caixa-de-pesquisa {
-        width: 95%;
+        width: 90%;
         height: 100%;
     }
 
@@ -255,8 +256,9 @@ li[class^="responsividade"] {
    .mostrar-barra-de-pesquisa {
         display: flex;
         height: 50px;
+        padding-left: 10px;
         border: 1px rgba(255, 255, 255, 0.582) solid;
-        margin: 32px -5% 0px -10px;
+        margin: 32px -10% 0px -20px;
         background: black;
    }
 

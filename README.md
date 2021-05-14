@@ -76,6 +76,18 @@
 
 ![](./assets/Screenshots/1.0.0.gif)
 
+<p align="center"><code> 🕗 3º Versão 🕗 </code> </p>
+
+> Demonstração das funcionalidades da 3º versão na resolução maior que 1168px.
+
+![](./assets/Screenshots/Netflix.gif)
+
+****
+
+> Demonstração das funcionalidades da 3º versão na resolução menor que 820px.
+
+![](./assets/Screenshots/Netflix-responsividade.gif)
+
 ****
 
 ### 💾 Pré-Requisitos: 
